@@ -1,0 +1,47 @@
+{"case_id": "C0423", "verdict": "ambiguous", "lean": "pass", "confidence": "low", "reason": "split()=473 is in [443,478] (pass); a \\w+ tokenizer splitting contractions (You'll, It's) gives 486 (fail). Natural word count lands in range."}
+{"case_id": "C0424", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Pronouns include it(4), you, this(2), these(3), its(3), which, etc.; far more than 7 personal/possessive/relative pronouns."}
+{"case_id": "C0425", "verdict": "fail", "lean": "fail", "confidence": "high", "reason": "Max nesting is 2 levels (double containing single, e.g. \"...embrace 'the other,'...\"); no double inside a single, so never 3 levels deep."}
+{"case_id": "C0426", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "\"She told me, 'The sign read \"Closed\" today.'\" = double>single>double, 3 levels alternating."}
+{"case_id": "C0427", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Seven '*' bullets, each with 2-3 '-' sub-bullets."}
+{"case_id": "C0428", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "36 distinct names from the list appear (Emma, Liam, ... Thomas); ≥23."}
+{"case_id": "C0429", "verdict": "fail", "lean": "fail", "confidence": "low", "reason": "Reference text not provided in prompt; cannot compute intended overlap. Proxy vs prompt: 4.6% word-trigram / 29% char-trigram, both outside 9-13%."}
+{"case_id": "C0430", "verdict": "ambiguous", "lean": "pass", "confidence": "medium", "reason": "split()=93 in [81,93] (pass); \\w+ tokenizer (Copernicus's->2) = 94 (fail). Boundary case; natural count 93."}
+{"case_id": "C0431", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "97 unique words (>=85)."}
+{"case_id": "C0432", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "'My Answer: yes My Conclusion: it works Future Outlook: bright' matches template labels in order with content."}
+{"case_id": "C0433", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Three '*' bullets (Show/Compute/Conclusion), each with '-' sub-bullets."}
+{"case_id": "C0434", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "List of word-items each prefixed by '!?!?' as bullet markers (crammed on one line but markers present per item)."}
+{"case_id": "C0435", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Three '*' bullets each with two '-' sub-bullets."}
+{"case_id": "C0436", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "Zero quotation marks in response; 'every quoted phrase must be followed...' vacuously satisfied."}
+{"case_id": "C0437", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Thirteen '*' bullets each with two '-' sub-bullets."}
+{"case_id": "C0438", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "Multiple sentences ending in '.' present, then two '*' bullets at the end."}
+{"case_id": "C0439", "verdict": "fail", "lean": "fail", "confidence": "high", "reason": "Not reverse-alphabetical (Somalia before South Africa; Iran/Ireland/Iceland/Israel/Ivory ascending); includes non-African countries; two separate lists."}
+{"case_id": "C0440", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "Outer \" wraps single-quoted block 'When discussing \"orthogonal projection,\"...': double>single>double = 3 levels alternating."}
+{"case_id": "C0441", "verdict": "ambiguous", "lean": "fail", "confidence": "low", "reason": "'Two markers mid-line only: a !?!? b !?!? c' reads as prose sentence not a list (markers mid-line) vs lenient split on !?!? yields items."}
+{"case_id": "C0442", "verdict": "fail", "lean": "fail", "confidence": "high", "reason": "Lines 'a','b','c' have no indentation; no incremental stairs."}
+{"case_id": "C0443", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "Single sentence 'I love it' ends with emoji 🇺🇸 (flag is an emoji)."}
+{"case_id": "C0444", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Tab-delimited (4 tabs/line), 3 data rows, every field wrapped in double quotes, correct column names."}
+{"case_id": "C0445", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "'* Amplitude' and '* Initial phase' each followed by a '-' sub-bullet (dashes not indented but present after each star)."}
+{"case_id": "C0446", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Eight items each preceded by 'SEPARATOR' on its own line."}
+{"case_id": "C0447", "verdict": "ambiguous", "lean": "pass", "confidence": "medium", "reason": "split()=28 in [24,28] (pass); \\w+ (crypto-ransomware->2) = 29 (fail). Natural count 28 = upper cap."}
+{"case_id": "C0448", "verdict": "fail", "lean": "fail", "confidence": "high", "reason": "Uses markdown '*...*' italics; no HTML tags anywhere. Instruction requires HTML to indicate italics."}
+{"case_id": "C0449", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Ten '*' bullets each with two '-' sub-bullets."}
+{"case_id": "C0450", "verdict": "fail", "lean": "fail", "confidence": "medium", "reason": "About 9 declarative sentences vs 1 interrogative ('?') and 1 exclamatory ('!'): not a balanced ratio."}
+{"case_id": "C0451", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "Five '*' bullets each with '-' sub-bullets; a stray leading '-' bullet also has sub-dashes."}
+{"case_id": "C0452", "verdict": "ambiguous", "lean": "fail", "confidence": "medium", "reason": "10 listed but only 6 unique palindromes >=5 (rotor x4, kayak x2). Distinct reading=6<10 (fail); token reading=10 (pass)."}
+{"case_id": "C0453", "verdict": "ambiguous", "lean": "pass", "confidence": "low", "reason": "'Hi there.' = 2 words; no 5th word exists -> vacuously satisfied (pass) vs no Japanese present at all (fail)."}
+{"case_id": "C0454", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Every adjacent sentence chains: variability->Variability, flexibility->Flexibility, ... process->Process."}
+{"case_id": "C0455", "verdict": "fail", "lean": "fail", "confidence": "high", "reason": "Response is a single line (no newlines, no indentation); no incremental stairs."}
+{"case_id": "C0456", "verdict": "fail", "lean": "fail", "confidence": "high", "reason": "All 7 paragraphs start!=end (Privacy...Past; By...Computer; Wireless...Planet; etc.)."}
+{"case_id": "C0457", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "No quotation marks in the screenplay; 'every quoted phrase...' vacuously satisfied."}
+{"case_id": "C0458", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "'The Cat and the Hat': all major words capitalized, minor 'and'/'the' lowercase per the parenthetical 'every major word'."}
+{"case_id": "C0459", "verdict": "ambiguous", "lean": "pass", "confidence": "low", "reason": "Numbered item 30 holds 'horary'; counting the 30 numbered items as sentences 1-30 (pass), but counting the title/tokenizer shifts gives item29 or Note (fail)."}
+{"case_id": "C0460", "verdict": "fail", "lean": "fail", "confidence": "high", "reason": "Only 8 valid: 'deed'=4 chars (<5), 'reviled' reversed='deliver' not palindrome; 8<10."}
+{"case_id": "C0461", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Both paragraphs start and end with 'silent'/'Silent'."}
+{"case_id": "C0462", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "Seven items each prefixed with '!?!?' as list markers (first marker at start)."}
+{"case_id": "C0463", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "Two '*' bullets each with '- ' sub-bullets."}
+{"case_id": "C0464", "verdict": "fail", "lean": "fail", "confidence": "high", "reason": "Per-sentence word counts 4,6,6,7,8,9,10,13 do not increase by exactly 4 (e.g. 4->6, 6->6)."}
+{"case_id": "C0465", "verdict": "fail", "lean": "fail", "confidence": "high", "reason": "Only 3 distinct coordinating conjunctions present: 'and','but','for'; needs at least 4 different."}
+{"case_id": "C0466", "verdict": "pass", "lean": "pass", "confidence": "high", "reason": "4th sentence: 'The political climate, cactiform in its rigid hierarchies, stifled dissent...'."}
+{"case_id": "C0467", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "Includes 3 '*' bullets (nested under a numbered list), each with '-' sub-bullets."}
+{"case_id": "C0468", "verdict": "pass", "lean": "pass", "confidence": "medium", "reason": "No quotation marks (bold used, not quotes); no quoted phrases -> vacuously satisfied."}
+{"case_id": "C0469", "verdict": "fail", "lean": "fail", "confidence": "high", "reason": "Response uses all 5 vowels (the, Venus, deep, true, unseen); instruction allows only three vowel types."}
