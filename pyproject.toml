@@ -1,0 +1,34 @@
+[project]
+name = "ifbench-audit"
+version = "0.1.0"
+description = "Audit of the IFBench instruction checkers used by Marin's Evalchemy fork (marin-community/marin#10060)."
+readme = "README.md"
+license = "Apache-2.0"
+authors = [{ name = "Xiaoyuan Wang" }]
+requires-python = ">=3.12"
+# The grader pins match Evalchemy's lock (absl-py, immutabledict and langdetect are imported by the
+# vendored upstream checkers).
+dependencies = [
+    "nltk==3.10.0",
+    "emoji==2.15.0",
+    "syllapy==0.8.0",
+    "absl-py==2.5.0",
+    "immutabledict==4.3.1",
+    "langdetect==1.0.9",
+    "pandas",
+    "pyarrow",
+]
+
+[project.optional-dependencies]
+test = ["pytest", "hypothesis"]
+figures = ["matplotlib"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ifbench_audit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
