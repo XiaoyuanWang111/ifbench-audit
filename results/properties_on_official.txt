@@ -1,0 +1,11 @@
+  FAILS on Marin's checkers:  test_line_indent_ignores_blank_lines
+  FAILS on Marin's checkers:  test_list_counts_markers_that_start_lines
+  FAILS on Marin's checkers:  test_nested_quotes_ignore_apostrophes_in_words
+  passes on Marin's checkers: test_nested_quotes_verdict_is_depth_at_least_three
+  FAILS on Marin's checkers:  test_newline_accepts_one_word_per_line_with_any_blank_lines
+  FAILS on Marin's checkers:  test_options_ignore_surrounding_whitespace
+  FAILS on Marin's checkers:  test_parentheses_group_counts_only_once_closed
+  passes on Marin's checkers: test_parentheses_verdict_is_closed_depth_at_least_five
+  FAILS on Marin's checkers:  test_sub_bullets_need_a_bullet_and_a_sub_bullet_under_each
+  FAILS on Marin's checkers:  test_trailing_newline_never_changes_a_verdict
+8 of 10 property tests fail on Marin's checkers

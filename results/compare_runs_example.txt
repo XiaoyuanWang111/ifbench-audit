@@ -1,0 +1,24 @@
+# python -I analysis/compare_runs.py <parquet> <Qwen2.5-14B greedy> <Qwen3-14B thinking greedy> Qwen2.5-14B Qwen3-14B-think
+# (both converted from results/panel/gen with analysis/panel_to_responses.py)
+Qwen2.5-14B: 300 prompts; Qwen3-14B-think: 300 prompts; compared on the 300 both answer
+
+## Prompt-level accuracy and the paired difference Qwen2.5-14B - Qwen3-14B-think
+  grader           Qwen2.5-14B Qwen3-14B-think   difference [95% interval]   wins/losses   McNemar p
+  marin_strict        35.0%    34.0%    +1.0 [ -5.1,  +7.1]     45 / 42     0.83
+  marin_loose         38.3%    39.3%    -1.0 [ -6.9,  +4.9]     39 / 42     0.82
+  upstream_strict     35.3%    34.3%    +1.0 [ -5.2,  +7.2]     46 / 43     0.83
+  upstream_loose      38.7%    39.7%    -1.0 [ -7.0,  +5.0]     40 / 43     0.83
+  fixes_only          33.3%    38.7%    -5.3 [-11.4,  +0.7]     35 / 51     0.11
+  proposed            30.7%    37.7%    -7.0 [-13.0,  -1.0]     33 / 54     0.03
+
+## Instruction types behind the discordant prompts (prompts where one run passes and the other fails)
+  marin_strict     format:sub-bullets 8, words:palindrome 6, count:numbers 4, count:punctuation 4, count:word_count_range 4, format:thesis 4, words:alphabet 4, count:words_japanese 3
+  marin_loose      words:palindrome 6, count:numbers 4, count:punctuation 4, count:word_count_range 4, format:thesis 4, words:alphabet 4, words:paragraph_last_first 4, words:vowel 4
+  fixes_only       words:palindrome 6, count:conjunctions 4, count:numbers 4, count:punctuation 4, count:word_count_range 4, format:no_bullets_bullets 4, format:thesis 4, words:alphabet 4
+  proposed         words:palindrome 7, count:word_count_range 5, count:conjunctions 4, count:numbers 4, count:punctuation 4, format:no_bullets_bullets 4, ratio:stop_words 4, words:alphabet 4
+
+## Prompts whose outcome changes with the grader (against Marin strict)
+  marin_loose       24 prompts change a verdict;  22 of them change the Qwen2.5-14B-Qwen3-14B-think comparison
+  upstream_strict    2 prompts change a verdict;   2 of them change the Qwen2.5-14B-Qwen3-14B-think comparison
+  fixes_only        23 prompts change a verdict;  22 of them change the Qwen2.5-14B-Qwen3-14B-think comparison
+  proposed          33 prompts change a verdict;  31 of them change the Qwen2.5-14B-Qwen3-14B-think comparison

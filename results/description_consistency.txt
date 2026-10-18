@@ -1,0 +1,71 @@
+##### marin: 59/344 instances whose prompt lacks the checker's own instruction text
+  count:conjunctions: 1 -> keys ['8']
+      checker says: 'Use at least 4 different coordinating conjunctions in the response.'
+      prompt has:   'Use at least 4.0 different coordinating conjunctions in the response. This delayed obliteration of the arterial lumen may occur by one of several mechanisms. The roughened or torn arterial intima attracts platelets, fibrin, and red cells, resulting in a trauma'
+  custom:mcq_count_length: 1 -> keys ['279']
+      checker says: 'Generate 4 multiple choice questions with 5 options each about \'20th century art history\'. Each question should start with the label "Question". The questions should get progressively longer. Do not provide an explanation.'
+      prompt has:   'Generate 4 multiple choice questions with 5 options each about "20th century art history". Each question should start with the label "Question". The questions should get progressively longer. Do not provide an explanation.'
+  format:options: 1 -> keys ['100']
+      checker says: 'Answer with one of the following options: yes/no/maybe. Do not give any explanation.'
+      prompt has:   'Answer with one of the following options: yes/no/maybe. Could sensitive historical events be better digested in game form with humour, interesting allegorical story, and loveable characters?'
+  ratio:sentence_balance: 7 -> keys ['153', '154', '155', '156', '157', '158', '159']
+      checker says: 'Ensure that the ratio of sentence types (declarative, interrogative, exclamatory) is balanced.'
+      prompt has:   'Ensure that the ratio of sentence types (declarative, interrogative, exclamatory) in your response is balanced. write a very long, detailed description of the 20th century in the style of analog horror. Part 1, Great War'
+  ratio:sentence_type: 6 -> keys ['160', '161', '162', '163', '164', '165']
+      checker says: 'Maintain a 2:1 ratio of declarative to interrogative sentences.'
+      prompt has:   'problems. Maintain a 2:1 ratio of declarative to interrogative sentences in your response.'
+  repeat:repeat_span: 4 -> keys ['284', '285', '286', '287']
+      checker says: 'Copy the span of words that lies between (and including) index 3 and 6, the indices are character indices!'
+      prompt has:   'antation. Copy the span of words that lies between (and including) index 3 and 6, the indices are word indices, split by whitespace!'
+  sentence:increment: 5 -> keys ['183', '184', '185', '186', '187']
+      checker says: 'Each sentence must contain exactly 4 more words than the previous one.'
+      prompt has:   's, etc... Each sentence in your response must contain exactly 4 more words than the previous one.'
+  sentence:keyword: 15 -> keys ['71', '72', '149', '150', '151', '152', '191', '192', '193', '194', '195', '196', '197', '198', '199']
+      checker says: 'The response must include keyword "fleetness" in the 8-th sentence.'
+      prompt has:   'sentence. The response must include keyword fleetness in the 8-th sentence.'
+  words:alphabet: 6 -> keys ['200', '201', '202', '203', '204', '205']
+      checker says: "Each word must start with the next letter of the alphabet, looping back to 'A' after 'Z'."
+      prompt has:   "hroughout Each word in your response must start with the next letter of the alphabet, looping back to 'A' after 'Z'."
+  words:keywords_specific_position: 2 -> keys ['10', '11']
+      checker says: 'Include keyword giggle in the 22-th sentence, as the 33-th word of that sentence.'
+      prompt has:   'Include keyword giggle in the 22-nd sentence, as the 33-rd word of that sentence. Reference Text: How is it possible that a given AI language model can generate different outputs for the same text prompt in different sessions?'
+  words:last_first: 5 -> keys ['219', '220', '221', '222', '223']
+      checker says: 'The last word of each sentence must become the first word of the next sentence.'
+      prompt has:   'How is it possible that GPT-4 can generate different outputs for the same text prompt in different sessions? In your response, the last word of each sentence must become the first word of the next sentence.'
+  words:paragraph_last_first: 6 -> keys ['241', '242', '243', '244', '245', '246']
+      checker says: 'Each paragraph must end with the same word it started with, separate paragraphs with a newline.'
+      prompt has:   'eing open Each paragraph of your response must end with the same word it started with, separate paragraphs with a newline.'
+##### upstream: 55/344 instances whose prompt lacks the checker's own instruction text
+  count:conjunctions: 1 -> keys ['8']
+      checker says: 'Use at least 4 different coordinating conjunctions in the response.'
+      prompt has:   'Use at least 4.0 different coordinating conjunctions in the response. This delayed obliteration of the arterial lumen may occur by one of several mechanisms. The roughened or torn arterial intima attracts platelets, fibrin, and red cells, resulting in a trauma'
+  custom:mcq_count_length: 1 -> keys ['279']
+      checker says: 'Generate 4 multiple choice questions with 5 options each about \'20th century art history\'. Each question should start with the label "Question". The questions should get progressively longer. Do not provide an explanation.'
+      prompt has:   'Generate 4 multiple choice questions with 5 options each about "20th century art history". Each question should start with the label "Question". The questions should get progressively longer. Do not provide an explanation.'
+  format:options: 1 -> keys ['100']
+      checker says: 'Answer with one of the following options: yes/no/maybe. Do not give any explanation.'
+      prompt has:   'Answer with one of the following options: yes/no/maybe. Could sensitive historical events be better digested in game form with humour, interesting allegorical story, and loveable characters?'
+  ratio:sentence_balance: 7 -> keys ['153', '154', '155', '156', '157', '158', '159']
+      checker says: 'Ensure that the ratio of sentence types (declarative, interrogative, exclamatory) is balanced.'
+      prompt has:   'Ensure that the ratio of sentence types (declarative, interrogative, exclamatory) in your response is balanced. write a very long, detailed description of the 20th century in the style of analog horror. Part 1, Great War'
+  ratio:sentence_type: 6 -> keys ['160', '161', '162', '163', '164', '165']
+      checker says: 'Maintain a 2:1 ratio of declarative to interrogative sentences.'
+      prompt has:   'problems. Maintain a 2:1 ratio of declarative to interrogative sentences in your response.'
+  sentence:increment: 5 -> keys ['183', '184', '185', '186', '187']
+      checker says: 'Each sentence must contain exactly 4 more words than the previous one.'
+      prompt has:   's, etc... Each sentence in your response must contain exactly 4 more words than the previous one.'
+  sentence:keyword: 15 -> keys ['71', '72', '149', '150', '151', '152', '191', '192', '193', '194', '195', '196', '197', '198', '199']
+      checker says: 'The response must include keyword "fleetness" in the 8-th sentence.'
+      prompt has:   'sentence. The response must include keyword fleetness in the 8-th sentence.'
+  words:alphabet: 6 -> keys ['200', '201', '202', '203', '204', '205']
+      checker says: "Each word must start with the next letter of the alphabet, looping back to 'A' after 'Z'."
+      prompt has:   "hroughout Each word in your response must start with the next letter of the alphabet, looping back to 'A' after 'Z'."
+  words:keywords_specific_position: 2 -> keys ['10', '11']
+      checker says: 'Include keyword giggle in the 22-th sentence, as the 33-th word of that sentence.'
+      prompt has:   'Include keyword giggle in the 22-nd sentence, as the 33-rd word of that sentence. Reference Text: How is it possible that a given AI language model can generate different outputs for the same text prompt in different sessions?'
+  words:last_first: 5 -> keys ['219', '220', '221', '222', '223']
+      checker says: 'The last word of each sentence must become the first word of the next sentence.'
+      prompt has:   'How is it possible that GPT-4 can generate different outputs for the same text prompt in different sessions? In your response, the last word of each sentence must become the first word of the next sentence.'
+  words:paragraph_last_first: 6 -> keys ['241', '242', '243', '244', '245', '246']
+      checker says: 'Each paragraph must end with the same word it started with, separate paragraphs with a newline.'
+      prompt has:   'eing open Each paragraph of your response must end with the same word it started with, separate paragraphs with a newline.'

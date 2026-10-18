@@ -1,0 +1,5 @@
+findings F1-F43
+unambiguous defect, Marin's checkers            37 types  200 constraints  190 prompts
+unambiguous defect, upstream main               31 types  168 constraints  164 prompts
+interpretation questions only                    7 types   55 constraints   55 prompts
+   ['count:numbers', 'count:words_japanese', 'format:parentheses', 'sentence:increment', 'words:consonants', 'words:keywords_specific_position', 'words:palindrome']

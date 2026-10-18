@@ -1,0 +1,2887 @@
+{
+ "skipped": [
+  "Qwen__Qwen3-14B__thinking/sample0: 300 responses, 272 aborted",
+  "Qwen__Qwen3-8B__thinking/sample0: 300 responses, 224 aborted"
+ ],
+ "accuracy": {
+  "Qwen__Qwen2.5-14B-Instruct": {
+   "marin_strict": [
+    0.35,
+    0.2966666666666667,
+    0.4066666666666667
+   ],
+   "marin_loose": [
+    0.38333333333333336,
+    0.32666666666666666,
+    0.44
+   ],
+   "upstream_strict": [
+    0.35333333333333333,
+    0.2966666666666667,
+    0.4066666666666667
+   ],
+   "upstream_loose": [
+    0.38666666666666666,
+    0.33,
+    0.44
+   ],
+   "fixes_only": [
+    0.3333333333333333,
+    0.28,
+    0.39
+   ],
+   "proposed": [
+    0.30666666666666664,
+    0.25333333333333335,
+    0.36
+   ]
+  },
+  "Qwen__Qwen2.5-32B-Instruct": {
+   "marin_strict": [
+    0.37333333333333335,
+    0.31666666666666665,
+    0.43333333333333335
+   ],
+   "marin_loose": [
+    0.41333333333333333,
+    0.3566666666666667,
+    0.4666666666666667
+   ],
+   "upstream_strict": [
+    0.37,
+    0.31333333333333335,
+    0.42333333333333334
+   ],
+   "upstream_loose": [
+    0.41,
+    0.3566666666666667,
+    0.47
+   ],
+   "fixes_only": [
+    0.36333333333333334,
+    0.31,
+    0.4166666666666667
+   ],
+   "proposed": [
+    0.33666666666666667,
+    0.2866666666666667,
+    0.39666666666666667
+   ]
+  },
+  "Qwen__Qwen2.5-7B-Instruct": {
+   "marin_strict": [
+    0.29,
+    0.24,
+    0.3433333333333333
+   ],
+   "marin_loose": [
+    0.32,
+    0.26666666666666666,
+    0.37
+   ],
+   "upstream_strict": [
+    0.29333333333333333,
+    0.24333333333333335,
+    0.3466666666666667
+   ],
+   "upstream_loose": [
+    0.3233333333333333,
+    0.27,
+    0.38
+   ],
+   "fixes_only": [
+    0.29333333333333333,
+    0.24333333333333335,
+    0.3433333333333333
+   ],
+   "proposed": [
+    0.26,
+    0.21,
+    0.30666666666666664
+   ]
+  },
+  "Qwen__Qwen3-14B": {
+   "marin_strict": [
+    0.2833333333333333,
+    0.23333333333333334,
+    0.33666666666666667
+   ],
+   "marin_loose": [
+    0.31666666666666665,
+    0.26666666666666666,
+    0.36666666666666664
+   ],
+   "upstream_strict": [
+    0.2833333333333333,
+    0.23666666666666666,
+    0.33666666666666667
+   ],
+   "upstream_loose": [
+    0.31666666666666665,
+    0.2633333333333333,
+    0.37
+   ],
+   "fixes_only": [
+    0.2966666666666667,
+    0.24666666666666667,
+    0.35
+   ],
+   "proposed": [
+    0.2866666666666667,
+    0.23666666666666666,
+    0.33666666666666667
+   ]
+  },
+  "Qwen__Qwen3-14B__thinking": {
+   "marin_strict": [
+    0.34,
+    0.2866666666666667,
+    0.3933333333333333
+   ],
+   "marin_loose": [
+    0.3933333333333333,
+    0.34,
+    0.4533333333333333
+   ],
+   "upstream_strict": [
+    0.3433333333333333,
+    0.29,
+    0.4
+   ],
+   "upstream_loose": [
+    0.39666666666666667,
+    0.33666666666666667,
+    0.4533333333333333
+   ],
+   "fixes_only": [
+    0.38666666666666666,
+    0.33,
+    0.44
+   ],
+   "proposed": [
+    0.37666666666666665,
+    0.3233333333333333,
+    0.43
+   ]
+  },
+  "Qwen__Qwen3-32B": {
+   "marin_strict": [
+    0.24666666666666667,
+    0.2,
+    0.2966666666666667
+   ],
+   "marin_loose": [
+    0.2833333333333333,
+    0.23333333333333334,
+    0.33666666666666667
+   ],
+   "upstream_strict": [
+    0.24666666666666667,
+    0.2,
+    0.2966666666666667
+   ],
+   "upstream_loose": [
+    0.2833333333333333,
+    0.23333333333333334,
+    0.33666666666666667
+   ],
+   "fixes_only": [
+    0.26666666666666666,
+    0.21666666666666667,
+    0.31666666666666665
+   ],
+   "proposed": [
+    0.24666666666666667,
+    0.19666666666666666,
+    0.3
+   ]
+  },
+  "Qwen__Qwen3-8B": {
+   "marin_strict": [
+    0.24666666666666667,
+    0.19666666666666666,
+    0.2966666666666667
+   ],
+   "marin_loose": [
+    0.29,
+    0.24,
+    0.34
+   ],
+   "upstream_strict": [
+    0.24333333333333335,
+    0.19666666666666666,
+    0.29333333333333333
+   ],
+   "upstream_loose": [
+    0.2866666666666667,
+    0.23333333333333334,
+    0.34
+   ],
+   "fixes_only": [
+    0.25,
+    0.20333333333333334,
+    0.3
+   ],
+   "proposed": [
+    0.22666666666666666,
+    0.18,
+    0.2733333333333333
+   ]
+  },
+  "Qwen__Qwen3-8B__thinking": {
+   "marin_strict": [
+    0.3233333333333333,
+    0.27,
+    0.37666666666666665
+   ],
+   "marin_loose": [
+    0.35333333333333333,
+    0.3,
+    0.4066666666666667
+   ],
+   "upstream_strict": [
+    0.3233333333333333,
+    0.2733333333333333,
+    0.37666666666666665
+   ],
+   "upstream_loose": [
+    0.36,
+    0.30333333333333334,
+    0.4166666666666667
+   ],
+   "fixes_only": [
+    0.3433333333333333,
+    0.29,
+    0.39666666666666667
+   ],
+   "proposed": [
+    0.33,
+    0.28,
+    0.38
+   ]
+  },
+  "allenai__Llama-3.1-Tulu-3-8B": {
+   "marin_strict": [
+    0.21666666666666667,
+    0.17,
+    0.2633333333333333
+   ],
+   "marin_loose": [
+    0.2633333333333333,
+    0.21666666666666667,
+    0.31333333333333335
+   ],
+   "upstream_strict": [
+    0.21666666666666667,
+    0.17,
+    0.2633333333333333
+   ],
+   "upstream_loose": [
+    0.2633333333333333,
+    0.21666666666666667,
+    0.31333333333333335
+   ],
+   "fixes_only": [
+    0.22333333333333333,
+    0.17666666666666667,
+    0.2733333333333333
+   ],
+   "proposed": [
+    0.22,
+    0.17666666666666667,
+    0.27
+   ]
+  },
+  "allenai__OLMo-2-0325-32B-Instruct": {
+   "marin_strict": [
+    0.35,
+    0.2966666666666667,
+    0.4066666666666667
+   ],
+   "marin_loose": [
+    0.3933333333333333,
+    0.33666666666666667,
+    0.45
+   ],
+   "upstream_strict": [
+    0.35,
+    0.29333333333333333,
+    0.4033333333333333
+   ],
+   "upstream_loose": [
+    0.39,
+    0.3333333333333333,
+    0.44666666666666666
+   ],
+   "fixes_only": [
+    0.3566666666666667,
+    0.30333333333333334,
+    0.41
+   ],
+   "proposed": [
+    0.33666666666666667,
+    0.2866666666666667,
+    0.39
+   ]
+  },
+  "allenai__OLMo-2-1124-13B-Instruct": {
+   "marin_strict": [
+    0.23,
+    0.18333333333333332,
+    0.28
+   ],
+   "marin_loose": [
+    0.26666666666666666,
+    0.21666666666666667,
+    0.31666666666666665
+   ],
+   "upstream_strict": [
+    0.23,
+    0.18333333333333332,
+    0.28
+   ],
+   "upstream_loose": [
+    0.26666666666666666,
+    0.21666666666666667,
+    0.31666666666666665
+   ],
+   "fixes_only": [
+    0.22333333333333333,
+    0.17666666666666667,
+    0.27
+   ],
+   "proposed": [
+    0.19333333333333333,
+    0.15,
+    0.24
+   ]
+  },
+  "allenai__OLMo-2-1124-7B-Instruct": {
+   "marin_strict": [
+    0.19666666666666666,
+    0.15333333333333332,
+    0.24
+   ],
+   "marin_loose": [
+    0.24,
+    0.19333333333333333,
+    0.29
+   ],
+   "upstream_strict": [
+    0.19666666666666666,
+    0.15333333333333332,
+    0.24333333333333335
+   ],
+   "upstream_loose": [
+    0.24,
+    0.19333333333333333,
+    0.29
+   ],
+   "fixes_only": [
+    0.2,
+    0.15666666666666668,
+    0.24666666666666667
+   ],
+   "proposed": [
+    0.18333333333333332,
+    0.14,
+    0.23
+   ]
+  },
+  "marin-community__marin-8b-instruct": {
+   "marin_strict": [
+    0.16333333333333333,
+    0.12333333333333334,
+    0.20666666666666667
+   ],
+   "marin_loose": [
+    0.20666666666666667,
+    0.16,
+    0.25333333333333335
+   ],
+   "upstream_strict": [
+    0.16333333333333333,
+    0.12333333333333334,
+    0.21
+   ],
+   "upstream_loose": [
+    0.20666666666666667,
+    0.16,
+    0.25333333333333335
+   ],
+   "fixes_only": [
+    0.16666666666666666,
+    0.12333333333333334,
+    0.21
+   ],
+   "proposed": [
+    0.16,
+    0.11666666666666667,
+    0.2
+   ]
+  },
+  "microsoft__phi-4": {
+   "marin_strict": [
+    0.2,
+    0.16,
+    0.24666666666666667
+   ],
+   "marin_loose": [
+    0.25,
+    0.20333333333333334,
+    0.3
+   ],
+   "upstream_strict": [
+    0.2,
+    0.15666666666666668,
+    0.24666666666666667
+   ],
+   "upstream_loose": [
+    0.25,
+    0.20333333333333334,
+    0.2966666666666667
+   ],
+   "fixes_only": [
+    0.20666666666666667,
+    0.16333333333333333,
+    0.25
+   ],
+   "proposed": [
+    0.2,
+    0.15333333333333332,
+    0.24666666666666667
+   ]
+  },
+  "mistralai__Mistral-7B-Instruct-v0.3": {
+   "marin_strict": [
+    0.17333333333333334,
+    0.13,
+    0.21666666666666667
+   ],
+   "marin_loose": [
+    0.2,
+    0.15666666666666668,
+    0.24666666666666667
+   ],
+   "upstream_strict": [
+    0.17333333333333334,
+    0.13333333333333333,
+    0.21666666666666667
+   ],
+   "upstream_loose": [
+    0.2,
+    0.15666666666666668,
+    0.24666666666666667
+   ],
+   "fixes_only": [
+    0.17333333333333334,
+    0.13333333333333333,
+    0.21666666666666667
+   ],
+   "proposed": [
+    0.14333333333333334,
+    0.10333333333333333,
+    0.18333333333333332
+   ]
+  },
+  "mistralai__Mistral-Small-24B-Instruct-2501": {
+   "marin_strict": [
+    0.22666666666666666,
+    0.18,
+    0.2733333333333333
+   ],
+   "marin_loose": [
+    0.2833333333333333,
+    0.23333333333333334,
+    0.33666666666666667
+   ],
+   "upstream_strict": [
+    0.23,
+    0.18666666666666668,
+    0.2833333333333333
+   ],
+   "upstream_loose": [
+    0.2866666666666667,
+    0.23666666666666666,
+    0.33666666666666667
+   ],
+   "fixes_only": [
+    0.25666666666666665,
+    0.21,
+    0.31
+   ],
+   "proposed": [
+    0.23333333333333334,
+    0.18666666666666668,
+    0.28
+   ]
+  }
+ },
+ "rankings": {
+  "marin_strict": [
+   "Qwen__Qwen2.5-32B-Instruct",
+   "Qwen__Qwen2.5-14B-Instruct",
+   "allenai__OLMo-2-0325-32B-Instruct",
+   "Qwen__Qwen3-14B__thinking",
+   "Qwen__Qwen3-8B__thinking",
+   "Qwen__Qwen2.5-7B-Instruct",
+   "Qwen__Qwen3-14B",
+   "Qwen__Qwen3-32B",
+   "Qwen__Qwen3-8B",
+   "allenai__OLMo-2-1124-13B-Instruct",
+   "mistralai__Mistral-Small-24B-Instruct-2501",
+   "allenai__Llama-3.1-Tulu-3-8B",
+   "microsoft__phi-4",
+   "allenai__OLMo-2-1124-7B-Instruct",
+   "mistralai__Mistral-7B-Instruct-v0.3",
+   "marin-community__marin-8b-instruct"
+  ],
+  "marin_loose": [
+   "Qwen__Qwen2.5-32B-Instruct",
+   "Qwen__Qwen3-14B__thinking",
+   "allenai__OLMo-2-0325-32B-Instruct",
+   "Qwen__Qwen2.5-14B-Instruct",
+   "Qwen__Qwen3-8B__thinking",
+   "Qwen__Qwen2.5-7B-Instruct",
+   "Qwen__Qwen3-14B",
+   "Qwen__Qwen3-8B",
+   "Qwen__Qwen3-32B",
+   "mistralai__Mistral-Small-24B-Instruct-2501",
+   "allenai__OLMo-2-1124-13B-Instruct",
+   "allenai__Llama-3.1-Tulu-3-8B",
+   "microsoft__phi-4",
+   "allenai__OLMo-2-1124-7B-Instruct",
+   "marin-community__marin-8b-instruct",
+   "mistralai__Mistral-7B-Instruct-v0.3"
+  ],
+  "upstream_strict": [
+   "Qwen__Qwen2.5-32B-Instruct",
+   "Qwen__Qwen2.5-14B-Instruct",
+   "allenai__OLMo-2-0325-32B-Instruct",
+   "Qwen__Qwen3-14B__thinking",
+   "Qwen__Qwen3-8B__thinking",
+   "Qwen__Qwen2.5-7B-Instruct",
+   "Qwen__Qwen3-14B",
+   "Qwen__Qwen3-32B",
+   "Qwen__Qwen3-8B",
+   "allenai__OLMo-2-1124-13B-Instruct",
+   "mistralai__Mistral-Small-24B-Instruct-2501",
+   "allenai__Llama-3.1-Tulu-3-8B",
+   "microsoft__phi-4",
+   "allenai__OLMo-2-1124-7B-Instruct",
+   "mistralai__Mistral-7B-Instruct-v0.3",
+   "marin-community__marin-8b-instruct"
+  ],
+  "upstream_loose": [
+   "Qwen__Qwen2.5-32B-Instruct",
+   "Qwen__Qwen3-14B__thinking",
+   "allenai__OLMo-2-0325-32B-Instruct",
+   "Qwen__Qwen2.5-14B-Instruct",
+   "Qwen__Qwen3-8B__thinking",
+   "Qwen__Qwen2.5-7B-Instruct",
+   "Qwen__Qwen3-14B",
+   "Qwen__Qwen3-8B",
+   "mistralai__Mistral-Small-24B-Instruct-2501",
+   "Qwen__Qwen3-32B",
+   "allenai__OLMo-2-1124-13B-Instruct",
+   "allenai__Llama-3.1-Tulu-3-8B",
+   "microsoft__phi-4",
+   "allenai__OLMo-2-1124-7B-Instruct",
+   "marin-community__marin-8b-instruct",
+   "mistralai__Mistral-7B-Instruct-v0.3"
+  ],
+  "fixes_only": [
+   "Qwen__Qwen3-14B__thinking",
+   "Qwen__Qwen2.5-32B-Instruct",
+   "allenai__OLMo-2-0325-32B-Instruct",
+   "Qwen__Qwen3-8B__thinking",
+   "Qwen__Qwen2.5-14B-Instruct",
+   "Qwen__Qwen3-14B",
+   "Qwen__Qwen2.5-7B-Instruct",
+   "Qwen__Qwen3-32B",
+   "mistralai__Mistral-Small-24B-Instruct-2501",
+   "Qwen__Qwen3-8B",
+   "allenai__Llama-3.1-Tulu-3-8B",
+   "allenai__OLMo-2-1124-13B-Instruct",
+   "microsoft__phi-4",
+   "allenai__OLMo-2-1124-7B-Instruct",
+   "mistralai__Mistral-7B-Instruct-v0.3",
+   "marin-community__marin-8b-instruct"
+  ],
+  "proposed": [
+   "Qwen__Qwen3-14B__thinking",
+   "Qwen__Qwen2.5-32B-Instruct",
+   "allenai__OLMo-2-0325-32B-Instruct",
+   "Qwen__Qwen3-8B__thinking",
+   "Qwen__Qwen2.5-14B-Instruct",
+   "Qwen__Qwen3-14B",
+   "Qwen__Qwen2.5-7B-Instruct",
+   "Qwen__Qwen3-32B",
+   "mistralai__Mistral-Small-24B-Instruct-2501",
+   "Qwen__Qwen3-8B",
+   "allenai__Llama-3.1-Tulu-3-8B",
+   "microsoft__phi-4",
+   "allenai__OLMo-2-1124-13B-Instruct",
+   "allenai__OLMo-2-1124-7B-Instruct",
+   "marin-community__marin-8b-instruct",
+   "mistralai__Mistral-7B-Instruct-v0.3"
+  ]
+ },
+ "flips": [
+  {
+   "grader": "fixes_only",
+   "a": "Qwen__Qwen2.5-14B-Instruct",
+   "b": "Qwen__Qwen3-14B__thinking",
+   "marin_strict_diff": 0.009999999999999953,
+   "diff": -0.053333333333333344,
+   "ci": [
+    -0.11333333333333333,
+    0.01
+   ]
+  },
+  {
+   "grader": "fixes_only",
+   "a": "Qwen__Qwen2.5-14B-Instruct",
+   "b": "Qwen__Qwen3-8B__thinking",
+   "marin_strict_diff": 0.026666666666666672,
+   "diff": -0.010000000000000009,
+   "ci": [
+    -0.07,
+    0.05333333333333334
+   ]
+  },
+  {
+   "grader": "fixes_only",
+   "a": "Qwen__Qwen2.5-32B-Instruct",
+   "b": "Qwen__Qwen3-14B__thinking",
+   "marin_strict_diff": 0.033333333333333326,
+   "diff": -0.023333333333333317,
+   "ci": [
+    -0.08,
+    0.03333333333333333
+   ]
+  },
+  {
+   "grader": "fixes_only",
+   "a": "Qwen__Qwen2.5-7B-Instruct",
+   "b": "Qwen__Qwen3-14B",
+   "marin_strict_diff": 0.006666666666666654,
+   "diff": -0.003333333333333355,
+   "ci": [
+    -0.056666666666666664,
+    0.05
+   ]
+  },
+  {
+   "grader": "fixes_only",
+   "a": "Qwen__Qwen3-14B__thinking",
+   "b": "allenai__OLMo-2-0325-32B-Instruct",
+   "marin_strict_diff": -0.009999999999999953,
+   "diff": 0.02999999999999997,
+   "ci": [
+    -0.023333333333333334,
+    0.08333333333333333
+   ]
+  },
+  {
+   "grader": "fixes_only",
+   "a": "Qwen__Qwen3-8B",
+   "b": "mistralai__Mistral-Small-24B-Instruct-2501",
+   "marin_strict_diff": 0.020000000000000018,
+   "diff": -0.006666666666666654,
+   "ci": [
+    -0.04666666666666667,
+    0.03333333333333333
+   ]
+  },
+  {
+   "grader": "fixes_only",
+   "a": "allenai__OLMo-2-1124-13B-Instruct",
+   "b": "mistralai__Mistral-Small-24B-Instruct-2501",
+   "marin_strict_diff": 0.003333333333333355,
+   "diff": -0.033333333333333326,
+   "ci": [
+    -0.08,
+    0.013333333333333334
+   ]
+  },
+  {
+   "grader": "proposed",
+   "a": "Qwen__Qwen2.5-14B-Instruct",
+   "b": "Qwen__Qwen3-14B__thinking",
+   "marin_strict_diff": 0.009999999999999953,
+   "diff": -0.07,
+   "ci": [
+    -0.13333333333333333,
+    -0.01
+   ]
+  },
+  {
+   "grader": "proposed",
+   "a": "Qwen__Qwen2.5-14B-Instruct",
+   "b": "Qwen__Qwen3-8B__thinking",
+   "marin_strict_diff": 0.026666666666666672,
+   "diff": -0.023333333333333373,
+   "ci": [
+    -0.08333333333333333,
+    0.04
+   ]
+  },
+  {
+   "grader": "proposed",
+   "a": "Qwen__Qwen2.5-32B-Instruct",
+   "b": "Qwen__Qwen3-14B__thinking",
+   "marin_strict_diff": 0.033333333333333326,
+   "diff": -0.03999999999999998,
+   "ci": [
+    -0.09333333333333334,
+    0.016666666666666666
+   ]
+  },
+  {
+   "grader": "proposed",
+   "a": "Qwen__Qwen2.5-7B-Instruct",
+   "b": "Qwen__Qwen3-14B",
+   "marin_strict_diff": 0.006666666666666654,
+   "diff": -0.026666666666666672,
+   "ci": [
+    -0.08,
+    0.03
+   ]
+  },
+  {
+   "grader": "proposed",
+   "a": "Qwen__Qwen3-14B__thinking",
+   "b": "allenai__OLMo-2-0325-32B-Instruct",
+   "marin_strict_diff": -0.009999999999999953,
+   "diff": 0.03999999999999998,
+   "ci": [
+    -0.013333333333333334,
+    0.09333333333333334
+   ]
+  },
+  {
+   "grader": "proposed",
+   "a": "Qwen__Qwen3-8B",
+   "b": "mistralai__Mistral-Small-24B-Instruct-2501",
+   "marin_strict_diff": 0.020000000000000018,
+   "diff": -0.006666666666666682,
+   "ci": [
+    -0.04666666666666667,
+    0.03333333333333333
+   ]
+  },
+  {
+   "grader": "proposed",
+   "a": "allenai__Llama-3.1-Tulu-3-8B",
+   "b": "allenai__OLMo-2-1124-13B-Instruct",
+   "marin_strict_diff": -0.013333333333333336,
+   "diff": 0.026666666666666672,
+   "ci": [
+    -0.013333333333333334,
+    0.06666666666666667
+   ]
+  },
+  {
+   "grader": "proposed",
+   "a": "allenai__OLMo-2-1124-13B-Instruct",
+   "b": "microsoft__phi-4",
+   "marin_strict_diff": 0.03,
+   "diff": -0.006666666666666682,
+   "ci": [
+    -0.05333333333333334,
+    0.03666666666666667
+   ]
+  },
+  {
+   "grader": "proposed",
+   "a": "allenai__OLMo-2-1124-13B-Instruct",
+   "b": "mistralai__Mistral-Small-24B-Instruct-2501",
+   "marin_strict_diff": 0.003333333333333355,
+   "diff": -0.04000000000000001,
+   "ci": [
+    -0.08666666666666667,
+    0.006666666666666667
+   ]
+  },
+  {
+   "grader": "proposed",
+   "a": "marin-community__marin-8b-instruct",
+   "b": "mistralai__Mistral-7B-Instruct-v0.3",
+   "marin_strict_diff": -0.010000000000000009,
+   "diff": 0.016666666666666663,
+   "ci": [
+    -0.02666666666666667,
+    0.056666666666666664
+   ]
+  },
+  {
+   "grader": "marin_loose",
+   "a": "Qwen__Qwen2.5-14B-Instruct",
+   "b": "Qwen__Qwen3-14B__thinking",
+   "marin_strict_diff": 0.009999999999999953,
+   "diff": -0.009999999999999953,
+   "ci": [
+    -0.06666666666666667,
+    0.05
+   ]
+  },
+  {
+   "grader": "marin_loose",
+   "a": "allenai__OLMo-2-1124-13B-Instruct",
+   "b": "mistralai__Mistral-Small-24B-Instruct-2501",
+   "marin_strict_diff": 0.003333333333333355,
+   "diff": -0.016666666666666663,
+   "ci": [
+    -0.06333333333333334,
+    0.03
+   ]
+  },
+  {
+   "grader": "marin_loose",
+   "a": "marin-community__marin-8b-instruct",
+   "b": "mistralai__Mistral-7B-Instruct-v0.3",
+   "marin_strict_diff": -0.010000000000000009,
+   "diff": 0.006666666666666654,
+   "ci": [
+    -0.03666666666666667,
+    0.05333333333333334
+   ]
+  }
+ ],
+ "rerun": {
+  "Qwen__Qwen2.5-14B-Instruct": {
+   "same order rerun": {
+    "identical": 0.6733333333333333,
+    "prompt_verdicts_changed": 5,
+    "delta": {
+     "marin_strict": -0.009999999999999953,
+     "proposed": -0.009999999999999953
+    }
+   },
+   "shuffled order": {
+    "identical": 0.6733333333333333,
+    "prompt_verdicts_changed": 5,
+    "delta": {
+     "marin_strict": -0.0033333333333332993,
+     "proposed": -0.006666666666666654
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.27,
+    "prompt_verdicts_changed": 14,
+    "delta": {
+     "marin_strict": -0.006666666666666654,
+     "proposed": 0.00666666666666671
+    }
+   }
+  },
+  "Qwen__Qwen2.5-32B-Instruct": {
+   "same order rerun": {
+    "identical": 0.36,
+    "prompt_verdicts_changed": 12,
+    "delta": {
+     "marin_strict": -0.013333333333333364,
+     "proposed": -0.003333333333333355
+    }
+   },
+   "shuffled order": {
+    "identical": 0.33,
+    "prompt_verdicts_changed": 15,
+    "delta": {
+     "marin_strict": -0.003333333333333355,
+     "proposed": 0.003333333333333355
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.24666666666666667,
+    "prompt_verdicts_changed": 13,
+    "delta": {
+     "marin_strict": -0.010000000000000009,
+     "proposed": 0.013333333333333308
+    }
+   }
+  },
+  "Qwen__Qwen2.5-7B-Instruct": {
+   "same order rerun": {
+    "identical": 0.30333333333333334,
+    "prompt_verdicts_changed": 9,
+    "delta": {
+     "marin_strict": -0.0033333333333332993,
+     "proposed": -0.006666666666666654
+    }
+   },
+   "shuffled order": {
+    "identical": 0.3433333333333333,
+    "prompt_verdicts_changed": 9,
+    "delta": {
+     "marin_strict": 0.003333333333333355,
+     "proposed": 0.006666666666666654
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.30333333333333334,
+    "prompt_verdicts_changed": 15,
+    "delta": {
+     "marin_strict": -0.0033333333333332993,
+     "proposed": -0.010000000000000009
+    }
+   }
+  },
+  "Qwen__Qwen3-14B": {
+   "same order rerun": {
+    "identical": 0.55,
+    "prompt_verdicts_changed": 3,
+    "delta": {
+     "marin_strict": -0.0033333333333332993,
+     "proposed": -0.003333333333333355
+    }
+   },
+   "shuffled order": {
+    "identical": 0.5366666666666666,
+    "prompt_verdicts_changed": 7,
+    "delta": {
+     "marin_strict": 0.003333333333333355,
+     "proposed": 0.0
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.54,
+    "prompt_verdicts_changed": 6,
+    "delta": {
+     "marin_strict": -0.013333333333333308,
+     "proposed": -0.010000000000000009
+    }
+   }
+  },
+  "Qwen__Qwen3-14B__thinking": {
+   "same order rerun": {
+    "identical": 0.52,
+    "prompt_verdicts_changed": 5,
+    "delta": {
+     "marin_strict": 0.009999999999999953,
+     "proposed": 0.010000000000000009
+    }
+   },
+   "shuffled order": {
+    "identical": 0.48,
+    "prompt_verdicts_changed": 4,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": -0.0033333333333332993
+    }
+   }
+  },
+  "Qwen__Qwen3-32B": {
+   "same order rerun": {
+    "identical": 0.2833333333333333,
+    "prompt_verdicts_changed": 16,
+    "delta": {
+     "marin_strict": -0.006666666666666682,
+     "proposed": 0.003333333333333327
+    }
+   },
+   "shuffled order": {
+    "identical": 0.24666666666666667,
+    "prompt_verdicts_changed": 13,
+    "delta": {
+     "marin_strict": -0.016666666666666663,
+     "proposed": -0.013333333333333336
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.23666666666666666,
+    "prompt_verdicts_changed": 13,
+    "delta": {
+     "marin_strict": 0.003333333333333327,
+     "proposed": 0.006666666666666682
+    }
+   }
+  },
+  "Qwen__Qwen3-8B": {
+   "same order rerun": {
+    "identical": 0.49,
+    "prompt_verdicts_changed": 4,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "shuffled order": {
+    "identical": 0.5033333333333333,
+    "prompt_verdicts_changed": 5,
+    "delta": {
+     "marin_strict": 0.003333333333333327,
+     "proposed": 0.003333333333333355
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.27,
+    "prompt_verdicts_changed": 11,
+    "delta": {
+     "marin_strict": -0.010000000000000009,
+     "proposed": -0.009999999999999981
+    }
+   }
+  },
+  "Qwen__Qwen3-8B__thinking": {
+   "same order rerun": {
+    "identical": 0.43333333333333335,
+    "prompt_verdicts_changed": 10,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.006666666666666654
+    }
+   },
+   "shuffled order": {
+    "identical": 0.46,
+    "prompt_verdicts_changed": 9,
+    "delta": {
+     "marin_strict": 0.003333333333333355,
+     "proposed": 0.0033333333333332993
+    }
+   }
+  },
+  "allenai__Llama-3.1-Tulu-3-8B": {
+   "same order rerun": {
+    "identical": 0.3333333333333333,
+    "prompt_verdicts_changed": 9,
+    "delta": {
+     "marin_strict": 0.003333333333333327,
+     "proposed": -0.003333333333333327
+    }
+   },
+   "shuffled order": {
+    "identical": 0.35333333333333333,
+    "prompt_verdicts_changed": 7,
+    "delta": {
+     "marin_strict": 0.009999999999999981,
+     "proposed": 0.010000000000000009
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.36333333333333334,
+    "prompt_verdicts_changed": 6,
+    "delta": {
+     "marin_strict": 0.013333333333333336,
+     "proposed": 0.006666666666666654
+    }
+   }
+  },
+  "allenai__OLMo-2-0325-32B-Instruct": {
+   "same order rerun": {
+    "identical": 0.38333333333333336,
+    "prompt_verdicts_changed": 8,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.010000000000000009
+    }
+   },
+   "shuffled order": {
+    "identical": 0.34,
+    "prompt_verdicts_changed": 7,
+    "delta": {
+     "marin_strict": -0.009999999999999953,
+     "proposed": 0.0
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.2866666666666667,
+    "prompt_verdicts_changed": 10,
+    "delta": {
+     "marin_strict": -0.013333333333333308,
+     "proposed": -0.016666666666666663
+    }
+   }
+  },
+  "allenai__OLMo-2-1124-13B-Instruct": {
+   "same order rerun": {
+    "identical": 0.6266666666666667,
+    "prompt_verdicts_changed": 8,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.003333333333333327
+    }
+   },
+   "shuffled order": {
+    "identical": 0.6266666666666667,
+    "prompt_verdicts_changed": 10,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.006666666666666682
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.23333333333333334,
+    "prompt_verdicts_changed": 13,
+    "delta": {
+     "marin_strict": 0.009999999999999981,
+     "proposed": 0.013333333333333336
+    }
+   }
+  },
+  "allenai__OLMo-2-1124-7B-Instruct": {
+   "same order rerun": {
+    "identical": 0.62,
+    "prompt_verdicts_changed": 2,
+    "delta": {
+     "marin_strict": 0.006666666666666682,
+     "proposed": 0.003333333333333355
+    }
+   },
+   "shuffled order": {
+    "identical": 0.6033333333333334,
+    "prompt_verdicts_changed": 2,
+    "delta": {
+     "marin_strict": 0.006666666666666682,
+     "proposed": 0.003333333333333355
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.2633333333333333,
+    "prompt_verdicts_changed": 11,
+    "delta": {
+     "marin_strict": 0.010000000000000009,
+     "proposed": 0.006666666666666682
+    }
+   }
+  },
+  "marin-community__marin-8b-instruct": {
+   "same order rerun": {
+    "identical": 0.49333333333333335,
+    "prompt_verdicts_changed": 5,
+    "delta": {
+     "marin_strict": -0.010000000000000009,
+     "proposed": -0.006666666666666682
+    }
+   },
+   "shuffled order": {
+    "identical": 0.4533333333333333,
+    "prompt_verdicts_changed": 5,
+    "delta": {
+     "marin_strict": -0.003333333333333327,
+     "proposed": 0.0
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.37,
+    "prompt_verdicts_changed": 5,
+    "delta": {
+     "marin_strict": 0.003333333333333327,
+     "proposed": 0.010000000000000009
+    }
+   }
+  },
+  "microsoft__phi-4": {
+   "same order rerun": {
+    "identical": 0.66,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "shuffled order": {
+    "identical": 0.5966666666666667,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.6066666666666667,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   }
+  },
+  "mistralai__Mistral-7B-Instruct-v0.3": {
+   "same order rerun": {
+    "identical": 0.5233333333333333,
+    "prompt_verdicts_changed": 3,
+    "delta": {
+     "marin_strict": 0.003333333333333327,
+     "proposed": -0.003333333333333327
+    }
+   },
+   "shuffled order": {
+    "identical": 0.43,
+    "prompt_verdicts_changed": 6,
+    "delta": {
+     "marin_strict": 0.013333333333333336,
+     "proposed": 0.013333333333333336
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.24333333333333335,
+    "prompt_verdicts_changed": 9,
+    "delta": {
+     "marin_strict": 0.003333333333333327,
+     "proposed": 0.013333333333333336
+    }
+   }
+  },
+  "mistralai__Mistral-Small-24B-Instruct-2501": {
+   "same order rerun": {
+    "identical": 0.5966666666666667,
+    "prompt_verdicts_changed": 3,
+    "delta": {
+     "marin_strict": -0.003333333333333327,
+     "proposed": 0.003333333333333327
+    }
+   },
+   "shuffled order": {
+    "identical": 0.32,
+    "prompt_verdicts_changed": 10,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.003333333333333327
+    }
+   },
+   "batch-invariant, shuffled": {
+    "identical": 1.0,
+    "prompt_verdicts_changed": 0,
+    "delta": {
+     "marin_strict": 0.0,
+     "proposed": 0.0
+    }
+   },
+   "default vs batch-invariant": {
+    "identical": 0.33,
+    "prompt_verdicts_changed": 10,
+    "delta": {
+     "marin_strict": 0.013333333333333336,
+     "proposed": 0.010000000000000009
+    }
+   }
+  }
+ },
+ "samples": {
+  "Qwen__Qwen2.5-14B-Instruct": {
+   "marin_strict": [
+    0.37,
+    0.3233333333333333,
+    0.3466666666666667,
+    0.33666666666666667,
+    0.33,
+    0.36333333333333334,
+    0.3466666666666667,
+    0.31333333333333335,
+    0.30666666666666664,
+    0.3433333333333333,
+    0.3466666666666667,
+    0.3433333333333333
+   ],
+   "proposed": [
+    0.33,
+    0.30666666666666664,
+    0.31333333333333335,
+    0.32,
+    0.31333333333333335,
+    0.3433333333333333,
+    0.3233333333333333,
+    0.29,
+    0.29333333333333333,
+    0.30333333333333334,
+    0.31333333333333335,
+    0.2966666666666667
+   ]
+  },
+  "Qwen__Qwen2.5-32B-Instruct": {
+   "marin_strict": [
+    0.3466666666666667,
+    0.36,
+    0.31333333333333335,
+    0.31333333333333335,
+    0.36666666666666664,
+    0.33666666666666667,
+    0.3566666666666667,
+    0.35
+   ],
+   "proposed": [
+    0.33,
+    0.33,
+    0.30333333333333334,
+    0.2966666666666667,
+    0.3233333333333333,
+    0.3233333333333333,
+    0.32,
+    0.32
+   ]
+  },
+  "Qwen__Qwen2.5-7B-Instruct": {
+   "marin_strict": [
+    0.28,
+    0.2833333333333333,
+    0.26666666666666666,
+    0.26666666666666666,
+    0.24666666666666667,
+    0.28,
+    0.2633333333333333,
+    0.29333333333333333,
+    0.26,
+    0.26,
+    0.26,
+    0.25666666666666665
+   ],
+   "proposed": [
+    0.26,
+    0.22666666666666666,
+    0.25333333333333335,
+    0.24,
+    0.23333333333333334,
+    0.24666666666666667,
+    0.23333333333333334,
+    0.24333333333333335,
+    0.22333333333333333,
+    0.24,
+    0.23666666666666666,
+    0.23333333333333334
+   ]
+  },
+  "Qwen__Qwen3-14B": {
+   "marin_strict": [
+    0.26,
+    0.28,
+    0.25666666666666665,
+    0.27666666666666667,
+    0.2966666666666667,
+    0.27,
+    0.2633333333333333,
+    0.2833333333333333,
+    0.29333333333333333,
+    0.3,
+    0.26666666666666666,
+    0.28
+   ],
+   "proposed": [
+    0.27666666666666667,
+    0.29,
+    0.25666666666666665,
+    0.2633333333333333,
+    0.3,
+    0.27,
+    0.2633333333333333,
+    0.2733333333333333,
+    0.2866666666666667,
+    0.29333333333333333,
+    0.27666666666666667,
+    0.2733333333333333
+   ]
+  },
+  "Qwen__Qwen3-32B": {
+   "marin_strict": [
+    0.26,
+    0.25666666666666665,
+    0.24666666666666667,
+    0.24,
+    0.24,
+    0.2966666666666667,
+    0.23333333333333334,
+    0.2733333333333333
+   ],
+   "proposed": [
+    0.26,
+    0.25666666666666665,
+    0.25666666666666665,
+    0.23666666666666666,
+    0.25666666666666665,
+    0.2833333333333333,
+    0.22,
+    0.25666666666666665
+   ]
+  },
+  "Qwen__Qwen3-8B": {
+   "marin_strict": [
+    0.25333333333333335,
+    0.26,
+    0.25333333333333335,
+    0.26,
+    0.26666666666666666,
+    0.24333333333333335,
+    0.25666666666666665,
+    0.26,
+    0.25666666666666665,
+    0.27666666666666667,
+    0.24666666666666667,
+    0.23
+   ],
+   "proposed": [
+    0.21666666666666667,
+    0.23666666666666666,
+    0.24,
+    0.23666666666666666,
+    0.25666666666666665,
+    0.22666666666666666,
+    0.23666666666666666,
+    0.24333333333333335,
+    0.23333333333333334,
+    0.25,
+    0.22,
+    0.22333333333333333
+   ]
+  },
+  "allenai__Llama-3.1-Tulu-3-8B": {
+   "marin_strict": [
+    0.23,
+    0.22333333333333333,
+    0.21333333333333335,
+    0.22333333333333333,
+    0.23666666666666666,
+    0.23333333333333334,
+    0.24666666666666667,
+    0.22,
+    0.22,
+    0.20333333333333334,
+    0.24333333333333335,
+    0.23666666666666666
+   ],
+   "proposed": [
+    0.23333333333333334,
+    0.22333333333333333,
+    0.22666666666666666,
+    0.22666666666666666,
+    0.24,
+    0.23,
+    0.23666666666666666,
+    0.21,
+    0.22,
+    0.21,
+    0.24666666666666667,
+    0.23333333333333334
+   ]
+  },
+  "allenai__OLMo-2-0325-32B-Instruct": {
+   "marin_strict": [
+    0.32666666666666666,
+    0.3233333333333333,
+    0.30666666666666664,
+    0.3333333333333333,
+    0.35,
+    0.33,
+    0.3433333333333333,
+    0.3
+   ],
+   "proposed": [
+    0.32,
+    0.31333333333333335,
+    0.29,
+    0.31333333333333335,
+    0.3233333333333333,
+    0.32,
+    0.31666666666666665,
+    0.29333333333333333
+   ]
+  },
+  "allenai__OLMo-2-1124-13B-Instruct": {
+   "marin_strict": [
+    0.23666666666666666,
+    0.23333333333333334,
+    0.22333333333333333,
+    0.23,
+    0.21,
+    0.22,
+    0.22333333333333333,
+    0.22,
+    0.23333333333333334,
+    0.24333333333333335,
+    0.21333333333333335,
+    0.19333333333333333
+   ],
+   "proposed": [
+    0.20666666666666667,
+    0.21333333333333335,
+    0.20333333333333334,
+    0.20666666666666667,
+    0.18666666666666668,
+    0.19666666666666666,
+    0.20333333333333334,
+    0.19333333333333333,
+    0.22333333333333333,
+    0.22333333333333333,
+    0.2,
+    0.18
+   ]
+  },
+  "allenai__OLMo-2-1124-7B-Instruct": {
+   "marin_strict": [
+    0.20333333333333334,
+    0.21,
+    0.20333333333333334,
+    0.19,
+    0.21333333333333335,
+    0.2,
+    0.21333333333333335,
+    0.20666666666666667,
+    0.21666666666666667,
+    0.2,
+    0.19333333333333333,
+    0.19666666666666666
+   ],
+   "proposed": [
+    0.18333333333333332,
+    0.19,
+    0.19,
+    0.18666666666666668,
+    0.20666666666666667,
+    0.18666666666666668,
+    0.2,
+    0.2,
+    0.18333333333333332,
+    0.18,
+    0.19333333333333333,
+    0.19
+   ]
+  },
+  "marin-community__marin-8b-instruct": {
+   "marin_strict": [
+    0.18,
+    0.18,
+    0.17666666666666667,
+    0.16666666666666666,
+    0.17,
+    0.19,
+    0.16,
+    0.19666666666666666,
+    0.19333333333333333,
+    0.18666666666666668,
+    0.17,
+    0.17666666666666667
+   ],
+   "proposed": [
+    0.16,
+    0.14333333333333334,
+    0.15666666666666668,
+    0.16,
+    0.16666666666666666,
+    0.17333333333333334,
+    0.14666666666666667,
+    0.19333333333333333,
+    0.17666666666666667,
+    0.16333333333333333,
+    0.17333333333333334,
+    0.17
+   ]
+  },
+  "microsoft__phi-4": {
+   "marin_strict": [
+    0.21333333333333335,
+    0.19,
+    0.19,
+    0.18333333333333332,
+    0.22333333333333333,
+    0.17666666666666667,
+    0.21,
+    0.17,
+    0.16,
+    0.18333333333333332,
+    0.15333333333333332,
+    0.18666666666666668
+   ],
+   "proposed": [
+    0.21,
+    0.18333333333333332,
+    0.20666666666666667,
+    0.19,
+    0.2,
+    0.17,
+    0.23,
+    0.17666666666666667,
+    0.18,
+    0.20333333333333334,
+    0.16333333333333333,
+    0.19
+   ]
+  },
+  "mistralai__Mistral-7B-Instruct-v0.3": {
+   "marin_strict": [
+    0.18666666666666668,
+    0.17333333333333334,
+    0.17,
+    0.17666666666666667,
+    0.19666666666666666,
+    0.17333333333333334,
+    0.15333333333333332,
+    0.17333333333333334,
+    0.17,
+    0.17333333333333334,
+    0.18666666666666668,
+    0.17333333333333334
+   ],
+   "proposed": [
+    0.17,
+    0.13666666666666666,
+    0.15333333333333332,
+    0.15333333333333332,
+    0.16666666666666666,
+    0.15333333333333332,
+    0.14,
+    0.15333333333333332,
+    0.15333333333333332,
+    0.15666666666666668,
+    0.15,
+    0.15
+   ]
+  },
+  "mistralai__Mistral-Small-24B-Instruct-2501": {
+   "marin_strict": [
+    0.20666666666666667,
+    0.21333333333333335,
+    0.19333333333333333,
+    0.20666666666666667,
+    0.19666666666666666,
+    0.21,
+    0.22,
+    0.23333333333333334
+   ],
+   "proposed": [
+    0.22333333333333333,
+    0.21,
+    0.22,
+    0.21666666666666667,
+    0.20666666666666667,
+    0.21,
+    0.21666666666666667,
+    0.23666666666666666
+   ]
+  }
+ },
+ "thinking": {
+  "Qwen__Qwen3-14B__thinking": {
+   "marin_strict": [
+    0.34,
+    0.2
+   ],
+   "marin_loose": [
+    0.3933333333333333,
+    0.22666666666666666
+   ],
+   "proposed": [
+    0.37666666666666665,
+    0.2
+   ]
+  },
+  "Qwen__Qwen3-8B__thinking": {
+   "marin_strict": [
+    0.3233333333333333,
+    0.19333333333333333
+   ],
+   "marin_loose": [
+    0.35333333333333333,
+    0.22
+   ],
+   "proposed": [
+    0.33,
+    0.18
+   ]
+  }
+ },
+ "disagreements": {
+  "count:keywords_multiple": [
+   1140,
+   1,
+   0,
+   1,
+   0
+  ],
+  "count:conjunctions": [
+   1596,
+   188,
+   0,
+   188,
+   0
+  ],
+  "words:keywords_specific_position": [
+   912,
+   0,
+   0,
+   0,
+   0
+  ],
+  "words:words_position": [
+   684,
+   0,
+   4,
+   0,
+   5
+  ],
+  "count:numbers": [
+   1824,
+   4,
+   1,
+   0,
+   0
+  ],
+  "count:unique_word_count": [
+   2052,
+   8,
+   0,
+   8,
+   0
+  ],
+  "count:person_names": [
+   1368,
+   0,
+   0,
+   0,
+   0
+  ],
+  "count:pronouns": [
+   1824,
+   0,
+   0,
+   0,
+   0
+  ],
+  "count:punctuation": [
+   1368,
+   0,
+   0,
+   0,
+   0
+  ],
+  "count:word_count_range": [
+   2508,
+   58,
+   80,
+   0,
+   0
+  ],
+  "format:list": [
+   2052,
+   463,
+   0,
+   9,
+   0
+  ],
+  "count:words_japanese": [
+   1140,
+   1,
+   1,
+   0,
+   0
+  ],
+  "repeat:repeat_change": [
+   684,
+   0,
+   0,
+   0,
+   0
+  ],
+  "repeat:repeat_simple": [
+   456,
+   0,
+   0,
+   0,
+   0
+  ],
+  "format:emoji": [
+   2052,
+   0,
+   173,
+   0,
+   173
+  ],
+  "sentence:keyword": [
+   3420,
+   10,
+   16,
+   10,
+   16
+  ],
+  "format:line_indent": [
+   2052,
+   126,
+   1,
+   0,
+   1
+  ],
+  "ratio:sentence_words": [
+   1596,
+   1,
+   0,
+   1,
+   0
+  ],
+  "words:no_consecutive": [
+   1824,
+   0,
+   0,
+   0,
+   0
+  ],
+  "format:newline": [
+   1368,
+   3,
+   5,
+   3,
+   5
+  ],
+  "format:no_bullets_bullets": [
+   1140,
+   31,
+   128,
+   31,
+   128
+  ],
+  "format:options": [
+   1368,
+   0,
+   78,
+   0,
+   78
+  ],
+  "format:parentheses": [
+   1824,
+   201,
+   0,
+   0,
+   0
+  ],
+  "format:quote_unquote": [
+   1140,
+   337,
+   0,
+   9,
+   0
+  ],
+  "format:quotes": [
+   1824,
+   327,
+   43,
+   327,
+   28
+  ],
+  "format:sub-bullets": [
+   2736,
+   208,
+   912,
+   208,
+   912
+  ],
+  "ratio:stop_words": [
+   2736,
+   15,
+   9,
+   0,
+   0
+  ],
+  "format:thesis": [
+   2052,
+   101,
+   2,
+   82,
+   2
+  ],
+  "ratio:overlap": [
+   2736,
+   162,
+   39,
+   162,
+   39
+  ],
+  "ratio:sentence_balance": [
+   1596,
+   8,
+   0,
+   8,
+   0
+  ],
+  "words:consonants": [
+   3420,
+   0,
+   0,
+   0,
+   0
+  ],
+  "ratio:sentence_type": [
+   1368,
+   15,
+   5,
+   15,
+   5
+  ],
+  "sentence:alliteration_increment": [
+   1140,
+   127,
+   10,
+   114,
+   11
+  ],
+  "sentence:increment": [
+   1824,
+   57,
+   0,
+   0,
+   1
+  ],
+  "words:alphabet": [
+   1368,
+   0,
+   0,
+   0,
+   0
+  ],
+  "words:odd_even_syllables": [
+   2052,
+   1,
+   0,
+   0,
+   0
+  ],
+  "words:last_first": [
+   1140,
+   25,
+   37,
+   0,
+   38
+  ],
+  "words:palindrome": [
+   1596,
+   320,
+   0,
+   0,
+   0
+  ],
+  "words:paragraph_last_first": [
+   1368,
+   1,
+   29,
+   0,
+   29
+  ],
+  "words:prime_lengths": [
+   1140,
+   0,
+   1,
+   0,
+   1
+  ],
+  "words:repeats": [
+   1140,
+   0,
+   0,
+   0,
+   0
+  ],
+  "words:start_verb": [
+   1368,
+   0,
+   3,
+   0,
+   3
+  ],
+  "words:vowel": [
+   2280,
+   0,
+   0,
+   0,
+   0
+  ],
+  "custom:character_reverse": [
+   228,
+   5,
+   0,
+   5,
+   0
+  ],
+  "custom:csv_city": [
+   228,
+   0,
+   0,
+   0,
+   0
+  ],
+  "custom:csv_quotes": [
+   228,
+   0,
+   0,
+   0,
+   0
+  ],
+  "custom:csv_special_character": [
+   228,
+   0,
+   1,
+   0,
+   0
+  ],
+  "custom:date_format_list": [
+   228,
+   0,
+   0,
+   0,
+   0
+  ],
+  "custom:european_capitals_sort": [
+   228,
+   0,
+   0,
+   0,
+   0
+  ],
+  "custom:mcq_count_length": [
+   228,
+   0,
+   29,
+   0,
+   29
+  ],
+  "custom:multiples": [
+   228,
+   0,
+   0,
+   0,
+   0
+  ],
+  "custom:reverse_newline": [
+   228,
+   6,
+   0,
+   6,
+   0
+  ],
+  "custom:sentence_alphabet": [
+   228,
+   0,
+   26,
+   0,
+   26
+  ],
+  "custom:word_reverse": [
+   228,
+   4,
+   0,
+   4,
+   0
+  ],
+  "repeat:repeat_span": [
+   912,
+   0,
+   0,
+   0,
+   0
+  ],
+  "format:title_case": [
+   912,
+   0,
+   18,
+   0,
+   18
+  ],
+  "format:output_template": [
+   912,
+   36,
+   0,
+   36,
+   0
+  ],
+  "format:no_whitespace": [
+   912,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "grader_effect": {
+  "Qwen__Qwen2.5-14B-Instruct": {
+   "upstream_strict": [
+    0.0033333333333333335,
+    0.0,
+    0.01
+   ],
+   "fixes_only": [
+    -0.016666666666666666,
+    -0.03666666666666667,
+    0.0033333333333333335
+   ],
+   "proposed": [
+    -0.043333333333333335,
+    -0.07,
+    -0.02
+   ],
+   "marin_loose": [
+    0.03333333333333333,
+    0.013333333333333334,
+    0.05333333333333334
+   ]
+  },
+  "Qwen__Qwen2.5-32B-Instruct": {
+   "upstream_strict": [
+    -0.0033333333333333335,
+    -0.013333333333333334,
+    0.006666666666666667
+   ],
+   "fixes_only": [
+    -0.01,
+    -0.03333333333333333,
+    0.013333333333333334
+   ],
+   "proposed": [
+    -0.03666666666666667,
+    -0.06666666666666667,
+    -0.006666666666666667
+   ],
+   "marin_loose": [
+    0.04,
+    0.02,
+    0.06333333333333334
+   ]
+  },
+  "Qwen__Qwen2.5-7B-Instruct": {
+   "upstream_strict": [
+    0.0033333333333333335,
+    0.0,
+    0.01
+   ],
+   "fixes_only": [
+    0.0033333333333333335,
+    -0.02,
+    0.02666666666666667
+   ],
+   "proposed": [
+    -0.03,
+    -0.06,
+    0.0
+   ],
+   "marin_loose": [
+    0.03,
+    0.013333333333333334,
+    0.05
+   ]
+  },
+  "Qwen__Qwen3-14B": {
+   "upstream_strict": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fixes_only": [
+    0.013333333333333334,
+    -0.006666666666666667,
+    0.03666666666666667
+   ],
+   "proposed": [
+    0.0033333333333333335,
+    -0.023333333333333334,
+    0.03
+   ],
+   "marin_loose": [
+    0.03333333333333333,
+    0.013333333333333334,
+    0.056666666666666664
+   ]
+  },
+  "Qwen__Qwen3-14B__thinking": {
+   "upstream_strict": [
+    0.0033333333333333335,
+    0.0,
+    0.01
+   ],
+   "fixes_only": [
+    0.04666666666666667,
+    0.023333333333333334,
+    0.07333333333333333
+   ],
+   "proposed": [
+    0.03666666666666667,
+    0.006666666666666667,
+    0.06666666666666667
+   ],
+   "marin_loose": [
+    0.05333333333333334,
+    0.03,
+    0.08
+   ]
+  },
+  "Qwen__Qwen3-32B": {
+   "upstream_strict": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fixes_only": [
+    0.02,
+    0.006666666666666667,
+    0.03666666666666667
+   ],
+   "proposed": [
+    0.0,
+    -0.023333333333333334,
+    0.023333333333333334
+   ],
+   "marin_loose": [
+    0.03666666666666667,
+    0.016666666666666666,
+    0.06
+   ]
+  },
+  "Qwen__Qwen3-8B": {
+   "upstream_strict": [
+    -0.0033333333333333335,
+    -0.01,
+    0.0
+   ],
+   "fixes_only": [
+    0.0033333333333333335,
+    -0.013333333333333334,
+    0.02
+   ],
+   "proposed": [
+    -0.02,
+    -0.04666666666666667,
+    0.0033333333333333335
+   ],
+   "marin_loose": [
+    0.043333333333333335,
+    0.023333333333333334,
+    0.06666666666666667
+   ]
+  },
+  "Qwen__Qwen3-8B__thinking": {
+   "upstream_strict": [
+    0.0,
+    -0.01,
+    0.01
+   ],
+   "fixes_only": [
+    0.02,
+    -0.006666666666666667,
+    0.04666666666666667
+   ],
+   "proposed": [
+    0.006666666666666667,
+    -0.023333333333333334,
+    0.03666666666666667
+   ],
+   "marin_loose": [
+    0.03,
+    0.013333333333333334,
+    0.05
+   ]
+  },
+  "allenai__Llama-3.1-Tulu-3-8B": {
+   "upstream_strict": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fixes_only": [
+    0.006666666666666667,
+    -0.01,
+    0.023333333333333334
+   ],
+   "proposed": [
+    0.0033333333333333335,
+    -0.013333333333333334,
+    0.02
+   ],
+   "marin_loose": [
+    0.04666666666666667,
+    0.023333333333333334,
+    0.07333333333333333
+   ]
+  },
+  "allenai__OLMo-2-0325-32B-Instruct": {
+   "upstream_strict": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fixes_only": [
+    0.006666666666666667,
+    -0.013333333333333334,
+    0.023333333333333334
+   ],
+   "proposed": [
+    -0.013333333333333334,
+    -0.04,
+    0.013333333333333334
+   ],
+   "marin_loose": [
+    0.043333333333333335,
+    0.023333333333333334,
+    0.06666666666666667
+   ]
+  },
+  "allenai__OLMo-2-1124-13B-Instruct": {
+   "upstream_strict": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fixes_only": [
+    -0.006666666666666667,
+    -0.02666666666666667,
+    0.013333333333333334
+   ],
+   "proposed": [
+    -0.03666666666666667,
+    -0.06333333333333334,
+    -0.01
+   ],
+   "marin_loose": [
+    0.03666666666666667,
+    0.016666666666666666,
+    0.06
+   ]
+  },
+  "allenai__OLMo-2-1124-7B-Instruct": {
+   "upstream_strict": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fixes_only": [
+    0.0033333333333333335,
+    -0.006666666666666667,
+    0.016666666666666666
+   ],
+   "proposed": [
+    -0.013333333333333334,
+    -0.03333333333333333,
+    0.0033333333333333335
+   ],
+   "marin_loose": [
+    0.043333333333333335,
+    0.02,
+    0.06666666666666667
+   ]
+  },
+  "marin-community__marin-8b-instruct": {
+   "upstream_strict": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fixes_only": [
+    0.0033333333333333335,
+    -0.02,
+    0.02666666666666667
+   ],
+   "proposed": [
+    -0.0033333333333333335,
+    -0.03,
+    0.023333333333333334
+   ],
+   "marin_loose": [
+    0.043333333333333335,
+    0.02,
+    0.06666666666666667
+   ]
+  },
+  "microsoft__phi-4": {
+   "upstream_strict": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fixes_only": [
+    0.006666666666666667,
+    -0.02,
+    0.03333333333333333
+   ],
+   "proposed": [
+    0.0,
+    -0.03,
+    0.03
+   ],
+   "marin_loose": [
+    0.05,
+    0.02666666666666667,
+    0.07666666666666666
+   ]
+  },
+  "mistralai__Mistral-7B-Instruct-v0.3": {
+   "upstream_strict": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fixes_only": [
+    0.0,
+    -0.02,
+    0.02
+   ],
+   "proposed": [
+    -0.03,
+    -0.056666666666666664,
+    -0.0033333333333333335
+   ],
+   "marin_loose": [
+    0.02666666666666667,
+    0.01,
+    0.04666666666666667
+   ]
+  },
+  "mistralai__Mistral-Small-24B-Instruct-2501": {
+   "upstream_strict": [
+    0.0033333333333333335,
+    0.0,
+    0.01
+   ],
+   "fixes_only": [
+    0.03,
+    0.006666666666666667,
+    0.056666666666666664
+   ],
+   "proposed": [
+    0.006666666666666667,
+    -0.02666666666666667,
+    0.04
+   ],
+   "marin_loose": [
+    0.056666666666666664,
+    0.03,
+    0.08666666666666667
+   ]
+  }
+ },
+ "sampled_rankings": {
+  "marin_strict": [
+   "Qwen__Qwen2.5-32B-Instruct",
+   "Qwen__Qwen2.5-14B-Instruct",
+   "allenai__OLMo-2-0325-32B-Instruct",
+   "Qwen__Qwen3-14B",
+   "Qwen__Qwen2.5-7B-Instruct",
+   "Qwen__Qwen3-32B",
+   "Qwen__Qwen3-8B",
+   "allenai__Llama-3.1-Tulu-3-8B",
+   "allenai__OLMo-2-1124-13B-Instruct",
+   "mistralai__Mistral-Small-24B-Instruct-2501",
+   "allenai__OLMo-2-1124-7B-Instruct",
+   "microsoft__phi-4",
+   "marin-community__marin-8b-instruct",
+   "mistralai__Mistral-7B-Instruct-v0.3"
+  ],
+  "proposed": [
+   "Qwen__Qwen2.5-32B-Instruct",
+   "Qwen__Qwen2.5-14B-Instruct",
+   "allenai__OLMo-2-0325-32B-Instruct",
+   "Qwen__Qwen3-14B",
+   "Qwen__Qwen3-32B",
+   "Qwen__Qwen2.5-7B-Instruct",
+   "Qwen__Qwen3-8B",
+   "allenai__Llama-3.1-Tulu-3-8B",
+   "mistralai__Mistral-Small-24B-Instruct-2501",
+   "allenai__OLMo-2-1124-13B-Instruct",
+   "microsoft__phi-4",
+   "allenai__OLMo-2-1124-7B-Instruct",
+   "marin-community__marin-8b-instruct",
+   "mistralai__Mistral-7B-Instruct-v0.3"
+  ],
+  "tau": 0.9340659340659341
+ },
+ "diagnostics": {
+  "Qwen__Qwen2.5-14B-Instruct": {
+   "tokens": 285.34,
+   "truncated": 0.043333333333333335,
+   "degenerate": 0.02666666666666667,
+   "unclosed": 0.0,
+   "passes_marin_strict": 129,
+   "bad_passes_marin_strict": 5,
+   "passes_proposed": 115,
+   "bad_passes_proposed": 4
+  },
+  "Qwen__Qwen2.5-32B-Instruct": {
+   "tokens": 288.7966666666667,
+   "truncated": 0.04,
+   "degenerate": 0.03,
+   "unclosed": 0.0,
+   "passes_marin_strict": 143,
+   "bad_passes_marin_strict": 9,
+   "passes_proposed": 132,
+   "bad_passes_proposed": 8
+  },
+  "Qwen__Qwen2.5-7B-Instruct": {
+   "tokens": 286.6333333333333,
+   "truncated": 0.06666666666666667,
+   "degenerate": 0.04,
+   "unclosed": 0.0,
+   "passes_marin_strict": 111,
+   "bad_passes_marin_strict": 9,
+   "passes_proposed": 99,
+   "bad_passes_proposed": 7
+  },
+  "Qwen__Qwen3-14B": {
+   "tokens": 372.9166666666667,
+   "truncated": 0.10333333333333333,
+   "degenerate": 0.03,
+   "unclosed": 0.0,
+   "passes_marin_strict": 109,
+   "bad_passes_marin_strict": 6,
+   "passes_proposed": 107,
+   "bad_passes_proposed": 5
+  },
+  "Qwen__Qwen3-14B__thinking": {
+   "tokens": 1654.4966666666667,
+   "truncated": 0.05333333333333334,
+   "degenerate": 0.05,
+   "unclosed": 0.03,
+   "passes_marin_strict": 127,
+   "bad_passes_marin_strict": 6,
+   "passes_proposed": 137,
+   "bad_passes_proposed": 4
+  },
+  "Qwen__Qwen3-32B": {
+   "tokens": 411.21666666666664,
+   "truncated": 0.10333333333333333,
+   "degenerate": 0.016666666666666666,
+   "unclosed": 0.0,
+   "passes_marin_strict": 96,
+   "bad_passes_marin_strict": 8,
+   "passes_proposed": 93,
+   "bad_passes_proposed": 7
+  },
+  "Qwen__Qwen3-8B": {
+   "tokens": 427.86,
+   "truncated": 0.15,
+   "degenerate": 0.056666666666666664,
+   "unclosed": 0.0,
+   "passes_marin_strict": 97,
+   "bad_passes_marin_strict": 8,
+   "passes_proposed": 89,
+   "bad_passes_proposed": 4
+  },
+  "Qwen__Qwen3-8B__thinking": {
+   "tokens": 2713.89,
+   "truncated": 0.16333333333333333,
+   "degenerate": 0.15666666666666668,
+   "unclosed": 0.11666666666666667,
+   "passes_marin_strict": 123,
+   "bad_passes_marin_strict": 20,
+   "passes_proposed": 125,
+   "bad_passes_proposed": 17
+  },
+  "allenai__Llama-3.1-Tulu-3-8B": {
+   "tokens": 421.4266666666667,
+   "truncated": 0.05333333333333334,
+   "degenerate": 0.0,
+   "unclosed": 0.0,
+   "passes_marin_strict": 83,
+   "bad_passes_marin_strict": 6,
+   "passes_proposed": 82,
+   "bad_passes_proposed": 6
+  },
+  "allenai__OLMo-2-0325-32B-Instruct": {
+   "tokens": 266.27666666666664,
+   "truncated": 0.02,
+   "degenerate": 0.0,
+   "unclosed": 0.0,
+   "passes_marin_strict": 133,
+   "bad_passes_marin_strict": 1,
+   "passes_proposed": 126,
+   "bad_passes_proposed": 1
+  },
+  "allenai__OLMo-2-1124-13B-Instruct": {
+   "tokens": 369.49666666666667,
+   "truncated": 0.016666666666666666,
+   "degenerate": 0.0,
+   "unclosed": 0.0,
+   "passes_marin_strict": 85,
+   "bad_passes_marin_strict": 2,
+   "passes_proposed": 72,
+   "bad_passes_proposed": 2
+  },
+  "allenai__OLMo-2-1124-7B-Instruct": {
+   "tokens": 390.1166666666667,
+   "truncated": 0.04,
+   "degenerate": 0.0,
+   "unclosed": 0.0,
+   "passes_marin_strict": 77,
+   "bad_passes_marin_strict": 2,
+   "passes_proposed": 70,
+   "bad_passes_proposed": 2
+  },
+  "marin-community__marin-8b-instruct": {
+   "tokens": 382.4866666666667,
+   "truncated": 0.11333333333333333,
+   "degenerate": 0.056666666666666664,
+   "unclosed": 0.0,
+   "passes_marin_strict": 66,
+   "bad_passes_marin_strict": 7,
+   "passes_proposed": 62,
+   "bad_passes_proposed": 8
+  },
+  "microsoft__phi-4": {
+   "tokens": 419.87333333333333,
+   "truncated": 0.043333333333333335,
+   "degenerate": 0.0033333333333333335,
+   "unclosed": 0.0,
+   "passes_marin_strict": 76,
+   "bad_passes_marin_strict": 1,
+   "passes_proposed": 77,
+   "bad_passes_proposed": 0
+  },
+  "mistralai__Mistral-7B-Instruct-v0.3": {
+   "tokens": 395.97,
+   "truncated": 0.05,
+   "degenerate": 0.006666666666666667,
+   "unclosed": 0.0,
+   "passes_marin_strict": 67,
+   "bad_passes_marin_strict": 4,
+   "passes_proposed": 59,
+   "bad_passes_proposed": 5
+  },
+  "mistralai__Mistral-Small-24B-Instruct-2501": {
+   "tokens": 377.18666666666667,
+   "truncated": 0.09,
+   "degenerate": 0.03,
+   "unclosed": 0.0,
+   "passes_marin_strict": 86,
+   "bad_passes_marin_strict": 6,
+   "passes_proposed": 86,
+   "bad_passes_proposed": 6
+  }
+ },
+ "loose_rescues": {
+  "count:numbers": [
+   138,
+   0
+  ],
+  "format:newline": [
+   94,
+   0
+  ],
+  "format:sub-bullets": [
+   1737,
+   912
+  ],
+  "ratio:stop_words": [
+   164,
+   5
+  ],
+  "ratio:sentence_balance": [
+   78,
+   0
+  ],
+  "sentence:keyword": [
+   84,
+   0
+  ],
+  "count:word_count_range": [
+   156,
+   6
+  ],
+  "words:paragraph_last_first": [
+   50,
+   7
+  ],
+  "custom:csv_special_character": [
+   13,
+   1
+  ],
+  "count:words_japanese": [
+   22,
+   1
+  ],
+  "ratio:overlap": [
+   38,
+   2
+  ],
+  "format:no_bullets_bullets": [
+   59,
+   42
+  ],
+  "format:quote_unquote": [
+   25,
+   0
+  ],
+  "format:emoji": [
+   104,
+   10
+  ],
+  "ratio:sentence_type": [
+   69,
+   0
+  ],
+  "sentence:alliteration_increment": [
+   106,
+   4
+  ],
+  "words:start_verb": [
+   79,
+   1
+  ],
+  "words:last_first": [
+   12,
+   2
+  ],
+  "format:line_indent": [
+   233,
+   1
+  ],
+  "custom:multiples": [
+   122,
+   0
+  ],
+  "words:vowel": [
+   27,
+   0
+  ],
+  "words:no_consecutive": [
+   40,
+   0
+  ],
+  "words:repeats": [
+   16,
+   0
+  ],
+  "sentence:increment": [
+   74,
+   0
+  ],
+  "format:title_case": [
+   6,
+   1
+  ],
+  "repeat:repeat_change": [
+   10,
+   0
+  ],
+  "format:quotes": [
+   10,
+   0
+  ],
+  "words:odd_even_syllables": [
+   3,
+   0
+  ],
+  "words:alphabet": [
+   17,
+   0
+  ],
+  "format:options": [
+   43,
+   0
+  ],
+  "custom:sentence_alphabet": [
+   22,
+   19
+  ],
+  "custom:mcq_count_length": [
+   9,
+   0
+  ],
+  "words:consonants": [
+   4,
+   0
+  ],
+  "words:words_position": [
+   1,
+   0
+  ],
+  "count:keywords_multiple": [
+   1,
+   0
+  ]
+ }
+}

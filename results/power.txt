@@ -1,0 +1,51 @@
+## 1. Pairs of different configurations (greedy, Marin strict)
+  120 pairs; discordant prompts median 21.3% (range 10.7-31.3%)
+  SE of the difference median 2.62 points; minimum detectable difference median 7.4 points (range 5.3-9.0)
+  pairs whose difference excludes zero at 95%: 79 of 120
+
+## 2. Greedy reruns of the same model
+  Qwen__Qwen2.5-14B-Instruct                   vs greedy_repeat    discordant   5 of 300 ( 1.7%), difference +1.0
+  Qwen__Qwen2.5-14B-Instruct                   vs greedy_shuffled  discordant   5 of 300 ( 1.7%), difference +0.3
+  Qwen__Qwen2.5-32B-Instruct                   vs greedy_repeat    discordant  12 of 300 ( 4.0%), difference +1.3
+  Qwen__Qwen2.5-32B-Instruct                   vs greedy_shuffled  discordant  15 of 300 ( 5.0%), difference +0.3
+  Qwen__Qwen2.5-7B-Instruct                    vs greedy_repeat    discordant   9 of 300 ( 3.0%), difference +0.3
+  Qwen__Qwen2.5-7B-Instruct                    vs greedy_shuffled  discordant   9 of 300 ( 3.0%), difference -0.3
+  Qwen__Qwen3-14B                              vs greedy_repeat    discordant   3 of 300 ( 1.0%), difference +0.3
+  Qwen__Qwen3-14B                              vs greedy_shuffled  discordant   7 of 300 ( 2.3%), difference -0.3
+  Qwen__Qwen3-14B__thinking                    vs greedy_repeat    discordant   5 of 300 ( 1.7%), difference -1.0
+  Qwen__Qwen3-14B__thinking                    vs greedy_shuffled  discordant   4 of 300 ( 1.3%), difference +0.0
+  Qwen__Qwen3-32B                              vs greedy_repeat    discordant  16 of 300 ( 5.3%), difference +0.7
+  Qwen__Qwen3-32B                              vs greedy_shuffled  discordant  13 of 300 ( 4.3%), difference +1.7
+  Qwen__Qwen3-8B                               vs greedy_repeat    discordant   4 of 300 ( 1.3%), difference +0.0
+  Qwen__Qwen3-8B                               vs greedy_shuffled  discordant   5 of 300 ( 1.7%), difference -0.3
+  Qwen__Qwen3-8B__thinking                     vs greedy_repeat    discordant  10 of 300 ( 3.3%), difference +0.0
+  Qwen__Qwen3-8B__thinking                     vs greedy_shuffled  discordant   9 of 300 ( 3.0%), difference -0.3
+  allenai__Llama-3.1-Tulu-3-8B                 vs greedy_repeat    discordant   9 of 300 ( 3.0%), difference -0.3
+  allenai__Llama-3.1-Tulu-3-8B                 vs greedy_shuffled  discordant   7 of 300 ( 2.3%), difference -1.0
+  allenai__OLMo-2-0325-32B-Instruct            vs greedy_repeat    discordant   8 of 300 ( 2.7%), difference +0.0
+  allenai__OLMo-2-0325-32B-Instruct            vs greedy_shuffled  discordant   7 of 300 ( 2.3%), difference +1.0
+  allenai__OLMo-2-1124-13B-Instruct            vs greedy_repeat    discordant   8 of 300 ( 2.7%), difference +0.0
+  allenai__OLMo-2-1124-13B-Instruct            vs greedy_shuffled  discordant  10 of 300 ( 3.3%), difference +0.0
+  allenai__OLMo-2-1124-7B-Instruct             vs greedy_repeat    discordant   2 of 300 ( 0.7%), difference -0.7
+  allenai__OLMo-2-1124-7B-Instruct             vs greedy_shuffled  discordant   2 of 300 ( 0.7%), difference -0.7
+  marin-community__marin-8b-instruct           vs greedy_repeat    discordant   5 of 300 ( 1.7%), difference +1.0
+  marin-community__marin-8b-instruct           vs greedy_shuffled  discordant   5 of 300 ( 1.7%), difference +0.3
+  microsoft__phi-4                             vs greedy_repeat    discordant   0 of 300 ( 0.0%), difference +0.0
+  microsoft__phi-4                             vs greedy_shuffled  discordant   0 of 300 ( 0.0%), difference +0.0
+  mistralai__Mistral-7B-Instruct-v0.3          vs greedy_repeat    discordant   3 of 300 ( 1.0%), difference -0.3
+  mistralai__Mistral-7B-Instruct-v0.3          vs greedy_shuffled  discordant   6 of 300 ( 2.0%), difference -1.3
+  mistralai__Mistral-Small-24B-Instruct-2501   vs greedy_repeat    discordant   3 of 300 ( 1.0%), difference +0.3
+  mistralai__Mistral-Small-24B-Instruct-2501   vs greedy_shuffled  discordant  10 of 300 ( 3.3%), difference +0.0
+
+## 3. The issue's run .3 against the Recovery baseline: 12 strict losses, 7 gains, 300 prompts
+  difference -1.67 points, 95% interval [-4.5, +1.2], exact McNemar p = 0.36; 19 discordant prompts
+  smallest non-inferiority margin with 80% power when the true difference is 0 (one-sided 2.5%), at this discordance: 4.1 points
+
+## 4. Averaging k sampled runs per prompt (pairs of configurations with >= 8 samples)
+  k = 1: SE of a pairwise difference median 2.55 points, minimum detectable difference 7.1 points (91 pairs)
+  k = 2: SE of a pairwise difference median 2.16 points, minimum detectable difference 6.0 points (91 pairs)
+  k = 4: SE of a pairwise difference median 1.90 points, minimum detectable difference 5.3 points (91 pairs)
+  k = 8: SE of a pairwise difference median 1.77 points, minimum detectable difference 5.0 points (91 pairs)
+
+## 5. Resampling prompts by instruction family (type of the first constraint) instead of independently
+  58 families; clustered SE / independent SE: median 1.27 (range 0.86-1.73) over 120 pairs

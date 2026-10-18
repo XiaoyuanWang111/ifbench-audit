@@ -1,0 +1,275 @@
+## 0. Runs left out: incomplete (stopped before every prompt finished)
+  Qwen__Qwen3-14B__thinking/sample0: 300 responses, 272 aborted
+  Qwen__Qwen3-8B__thinking/sample0: 300 responses, 224 aborted
+
+## 1. Prompt-level accuracy, greedy run (95% bootstrap interval)
+config                                                   marin_strict      marin_loose  upstream_strict   upstream_loose       fixes_only         proposed  truncated
+Qwen__Qwen2.5-14B-Instruct                            35.0 [29.7,40.7]  38.3 [32.7,44.0]  35.3 [29.7,40.7]  38.7 [33.0,44.0]  33.3 [28.0,39.0]  30.7 [25.3,36.0]    4.3%
+Qwen__Qwen2.5-32B-Instruct                            37.3 [31.7,43.3]  41.3 [35.7,46.7]  37.0 [31.3,42.3]  41.0 [35.7,47.0]  36.3 [31.0,41.7]  33.7 [28.7,39.7]    4.0%
+Qwen__Qwen2.5-7B-Instruct                             29.0 [24.0,34.3]  32.0 [26.7,37.0]  29.3 [24.3,34.7]  32.3 [27.0,38.0]  29.3 [24.3,34.3]  26.0 [21.0,30.7]    6.7%
+Qwen__Qwen3-14B                                       28.3 [23.3,33.7]  31.7 [26.7,36.7]  28.3 [23.7,33.7]  31.7 [26.3,37.0]  29.7 [24.7,35.0]  28.7 [23.7,33.7]   10.3%
+Qwen__Qwen3-14B__thinking                             34.0 [28.7,39.3]  39.3 [34.0,45.3]  34.3 [29.0,40.0]  39.7 [33.7,45.3]  38.7 [33.0,44.0]  37.7 [32.3,43.0]    5.3%
+Qwen__Qwen3-32B                                       24.7 [20.0,29.7]  28.3 [23.3,33.7]  24.7 [20.0,29.7]  28.3 [23.3,33.7]  26.7 [21.7,31.7]  24.7 [19.7,30.0]   10.3%
+Qwen__Qwen3-8B                                        24.7 [19.7,29.7]  29.0 [24.0,34.0]  24.3 [19.7,29.3]  28.7 [23.3,34.0]  25.0 [20.3,30.0]  22.7 [18.0,27.3]   15.0%
+Qwen__Qwen3-8B__thinking                              32.3 [27.0,37.7]  35.3 [30.0,40.7]  32.3 [27.3,37.7]  36.0 [30.3,41.7]  34.3 [29.0,39.7]  33.0 [28.0,38.0]   16.3%
+allenai__Llama-3.1-Tulu-3-8B                          21.7 [17.0,26.3]  26.3 [21.7,31.3]  21.7 [17.0,26.3]  26.3 [21.7,31.3]  22.3 [17.7,27.3]  22.0 [17.7,27.0]    5.3%
+allenai__OLMo-2-0325-32B-Instruct                     35.0 [29.7,40.7]  39.3 [33.7,45.0]  35.0 [29.3,40.3]  39.0 [33.3,44.7]  35.7 [30.3,41.0]  33.7 [28.7,39.0]    2.0%
+allenai__OLMo-2-1124-13B-Instruct                     23.0 [18.3,28.0]  26.7 [21.7,31.7]  23.0 [18.3,28.0]  26.7 [21.7,31.7]  22.3 [17.7,27.0]  19.3 [15.0,24.0]    1.7%
+allenai__OLMo-2-1124-7B-Instruct                      19.7 [15.3,24.0]  24.0 [19.3,29.0]  19.7 [15.3,24.3]  24.0 [19.3,29.0]  20.0 [15.7,24.7]  18.3 [14.0,23.0]    4.0%
+marin-community__marin-8b-instruct                    16.3 [12.3,20.7]  20.7 [16.0,25.3]  16.3 [12.3,21.0]  20.7 [16.0,25.3]  16.7 [12.3,21.0]  16.0 [11.7,20.0]   11.3%
+microsoft__phi-4                                      20.0 [16.0,24.7]  25.0 [20.3,30.0]  20.0 [15.7,24.7]  25.0 [20.3,29.7]  20.7 [16.3,25.0]  20.0 [15.3,24.7]    4.3%
+mistralai__Mistral-7B-Instruct-v0.3                   17.3 [13.0,21.7]  20.0 [15.7,24.7]  17.3 [13.3,21.7]  20.0 [15.7,24.7]  17.3 [13.3,21.7]  14.3 [10.3,18.3]    5.0%
+mistralai__Mistral-Small-24B-Instruct-2501            22.7 [18.0,27.3]  28.3 [23.3,33.7]  23.0 [18.7,28.3]  28.7 [23.7,33.7]  25.7 [21.0,31.0]  23.3 [18.7,28.0]    9.0%
+
+## 1b. Grader effect on each model's greedy accuracy: difference from Marin strict on the
+##     same responses, with a paired bootstrap 95% interval
+  Qwen__Qwen2.5-14B-Instruct                           upstream_strict  +0.3 [+0.0,+1.0]   fixes_only  -1.7 [-3.7,+0.3]   proposed  -4.3 [-7.0,-2.0]   marin_loose  +3.3 [+1.3,+5.3]
+  Qwen__Qwen2.5-32B-Instruct                           upstream_strict  -0.3 [-1.3,+0.7]   fixes_only  -1.0 [-3.3,+1.3]   proposed  -3.7 [-6.7,-0.7]   marin_loose  +4.0 [+2.0,+6.3]
+  Qwen__Qwen2.5-7B-Instruct                            upstream_strict  +0.3 [+0.0,+1.0]   fixes_only  +0.3 [-2.0,+2.7]   proposed  -3.0 [-6.0,+0.0]   marin_loose  +3.0 [+1.3,+5.0]
+  Qwen__Qwen3-14B                                      upstream_strict  +0.0 [+0.0,+0.0]   fixes_only  +1.3 [-0.7,+3.7]   proposed  +0.3 [-2.3,+3.0]   marin_loose  +3.3 [+1.3,+5.7]
+  Qwen__Qwen3-14B__thinking                            upstream_strict  +0.3 [+0.0,+1.0]   fixes_only  +4.7 [+2.3,+7.3]   proposed  +3.7 [+0.7,+6.7]   marin_loose  +5.3 [+3.0,+8.0]
+  Qwen__Qwen3-32B                                      upstream_strict  +0.0 [+0.0,+0.0]   fixes_only  +2.0 [+0.7,+3.7]   proposed  +0.0 [-2.3,+2.3]   marin_loose  +3.7 [+1.7,+6.0]
+  Qwen__Qwen3-8B                                       upstream_strict  -0.3 [-1.0,+0.0]   fixes_only  +0.3 [-1.3,+2.0]   proposed  -2.0 [-4.7,+0.3]   marin_loose  +4.3 [+2.3,+6.7]
+  Qwen__Qwen3-8B__thinking                             upstream_strict  +0.0 [-1.0,+1.0]   fixes_only  +2.0 [-0.7,+4.7]   proposed  +0.7 [-2.3,+3.7]   marin_loose  +3.0 [+1.3,+5.0]
+  allenai__Llama-3.1-Tulu-3-8B                         upstream_strict  +0.0 [+0.0,+0.0]   fixes_only  +0.7 [-1.0,+2.3]   proposed  +0.3 [-1.3,+2.0]   marin_loose  +4.7 [+2.3,+7.3]
+  allenai__OLMo-2-0325-32B-Instruct                    upstream_strict  +0.0 [+0.0,+0.0]   fixes_only  +0.7 [-1.3,+2.3]   proposed  -1.3 [-4.0,+1.3]   marin_loose  +4.3 [+2.3,+6.7]
+  allenai__OLMo-2-1124-13B-Instruct                    upstream_strict  +0.0 [+0.0,+0.0]   fixes_only  -0.7 [-2.7,+1.3]   proposed  -3.7 [-6.3,-1.0]   marin_loose  +3.7 [+1.7,+6.0]
+  allenai__OLMo-2-1124-7B-Instruct                     upstream_strict  +0.0 [+0.0,+0.0]   fixes_only  +0.3 [-0.7,+1.7]   proposed  -1.3 [-3.3,+0.3]   marin_loose  +4.3 [+2.0,+6.7]
+  marin-community__marin-8b-instruct                   upstream_strict  +0.0 [+0.0,+0.0]   fixes_only  +0.3 [-2.0,+2.7]   proposed  -0.3 [-3.0,+2.3]   marin_loose  +4.3 [+2.0,+6.7]
+  microsoft__phi-4                                     upstream_strict  +0.0 [+0.0,+0.0]   fixes_only  +0.7 [-2.0,+3.3]   proposed  +0.0 [-3.0,+3.0]   marin_loose  +5.0 [+2.7,+7.7]
+  mistralai__Mistral-7B-Instruct-v0.3                  upstream_strict  +0.0 [+0.0,+0.0]   fixes_only  +0.0 [-2.0,+2.0]   proposed  -3.0 [-5.7,-0.3]   marin_loose  +2.7 [+1.0,+4.7]
+  mistralai__Mistral-Small-24B-Instruct-2501           upstream_strict  +0.3 [+0.0,+1.0]   fixes_only  +3.0 [+0.7,+5.7]   proposed  +0.7 [-2.7,+4.0]   marin_loose  +5.7 [+3.0,+8.7]
+
+## 2. Rankings by grader (greedy) and pairs that flip relative to Marin strict
+  marin_strict     tau vs marin_strict = +1.000
+  marin_loose      tau vs marin_strict = +0.900
+  upstream_strict  tau vs marin_strict = +1.000
+  upstream_loose   tau vs marin_strict = +0.883
+  fixes_only       tau vs marin_strict = +0.850
+  proposed         tau vs marin_strict = +0.817
+  fixes_only       Qwen__Qwen2.5-14B-Instruct vs Qwen__Qwen3-14B__thinking: marin strict +1.0 -> -5.3 [-11.3,+1.0]
+  fixes_only       Qwen__Qwen2.5-14B-Instruct vs Qwen__Qwen3-8B__thinking: marin strict +2.7 -> -1.0 [-7.0,+5.3]
+  fixes_only       Qwen__Qwen2.5-32B-Instruct vs Qwen__Qwen3-14B__thinking: marin strict +3.3 -> -2.3 [-8.0,+3.3]
+  fixes_only       Qwen__Qwen2.5-7B-Instruct vs Qwen__Qwen3-14B: marin strict +0.7 -> -0.3 [-5.7,+5.0]
+  fixes_only       Qwen__Qwen3-14B__thinking vs allenai__OLMo-2-0325-32B-Instruct: marin strict -1.0 -> +3.0 [-2.3,+8.3]
+  fixes_only       Qwen__Qwen3-8B vs mistralai__Mistral-Small-24B-Instruct-2501: marin strict +2.0 -> -0.7 [-4.7,+3.3]
+  fixes_only       allenai__OLMo-2-1124-13B-Instruct vs mistralai__Mistral-Small-24B-Instruct-2501: marin strict +0.3 -> -3.3 [-8.0,+1.3]
+  proposed         Qwen__Qwen2.5-14B-Instruct vs Qwen__Qwen3-14B__thinking: marin strict +1.0 -> -7.0 [-13.3,-1.0]
+  proposed         Qwen__Qwen2.5-14B-Instruct vs Qwen__Qwen3-8B__thinking: marin strict +2.7 -> -2.3 [-8.3,+4.0]
+  proposed         Qwen__Qwen2.5-32B-Instruct vs Qwen__Qwen3-14B__thinking: marin strict +3.3 -> -4.0 [-9.3,+1.7]
+  proposed         Qwen__Qwen2.5-7B-Instruct vs Qwen__Qwen3-14B: marin strict +0.7 -> -2.7 [-8.0,+3.0]
+  proposed         Qwen__Qwen3-14B__thinking vs allenai__OLMo-2-0325-32B-Instruct: marin strict -1.0 -> +4.0 [-1.3,+9.3]
+  proposed         Qwen__Qwen3-8B vs mistralai__Mistral-Small-24B-Instruct-2501: marin strict +2.0 -> -0.7 [-4.7,+3.3]
+  proposed         allenai__Llama-3.1-Tulu-3-8B vs allenai__OLMo-2-1124-13B-Instruct: marin strict -1.3 -> +2.7 [-1.3,+6.7]
+  proposed         allenai__OLMo-2-1124-13B-Instruct vs microsoft__phi-4: marin strict +3.0 -> -0.7 [-5.3,+3.7]
+  proposed         allenai__OLMo-2-1124-13B-Instruct vs mistralai__Mistral-Small-24B-Instruct-2501: marin strict +0.3 -> -4.0 [-8.7,+0.7]
+  proposed         marin-community__marin-8b-instruct vs mistralai__Mistral-7B-Instruct-v0.3: marin strict -1.0 -> +1.7 [-2.7,+5.7]
+  marin_loose      Qwen__Qwen2.5-14B-Instruct vs Qwen__Qwen3-14B__thinking: marin strict +1.0 -> -1.0 [-6.7,+5.0]
+  marin_loose      allenai__OLMo-2-1124-13B-Instruct vs mistralai__Mistral-Small-24B-Instruct-2501: marin strict +0.3 -> -1.7 [-6.3,+3.0]
+  marin_loose      marin-community__marin-8b-instruct vs mistralai__Mistral-7B-Instruct-v0.3: marin strict -1.0 -> +0.7 [-3.7,+5.3]
+
+## 3. Greedy reruns (decoding nondeterminism): identical responses, prompt verdicts that
+##    change under Marin strict, and the accuracy change, for each pair of greedy runs
+  Qwen__Qwen2.5-14B-Instruct                   same order rerun            identical  67.3%  verdicts changed   5  marin strict  -1.0  proposed  -1.0
+  Qwen__Qwen2.5-14B-Instruct                   shuffled order              identical  67.3%  verdicts changed   5  marin strict  -0.3  proposed  -0.7
+  Qwen__Qwen2.5-14B-Instruct                   batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  Qwen__Qwen2.5-14B-Instruct                   default vs batch-invariant  identical  27.0%  verdicts changed  14  marin strict  -0.7  proposed  +0.7
+  Qwen__Qwen2.5-32B-Instruct                   same order rerun            identical  36.0%  verdicts changed  12  marin strict  -1.3  proposed  -0.3
+  Qwen__Qwen2.5-32B-Instruct                   shuffled order              identical  33.0%  verdicts changed  15  marin strict  -0.3  proposed  +0.3
+  Qwen__Qwen2.5-32B-Instruct                   batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  Qwen__Qwen2.5-32B-Instruct                   default vs batch-invariant  identical  24.7%  verdicts changed  13  marin strict  -1.0  proposed  +1.3
+  Qwen__Qwen2.5-7B-Instruct                    same order rerun            identical  30.3%  verdicts changed   9  marin strict  -0.3  proposed  -0.7
+  Qwen__Qwen2.5-7B-Instruct                    shuffled order              identical  34.3%  verdicts changed   9  marin strict  +0.3  proposed  +0.7
+  Qwen__Qwen2.5-7B-Instruct                    batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  Qwen__Qwen2.5-7B-Instruct                    default vs batch-invariant  identical  30.3%  verdicts changed  15  marin strict  -0.3  proposed  -1.0
+  Qwen__Qwen3-14B                              same order rerun            identical  55.0%  verdicts changed   3  marin strict  -0.3  proposed  -0.3
+  Qwen__Qwen3-14B                              shuffled order              identical  53.7%  verdicts changed   7  marin strict  +0.3  proposed  +0.0
+  Qwen__Qwen3-14B                              batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  Qwen__Qwen3-14B                              default vs batch-invariant  identical  54.0%  verdicts changed   6  marin strict  -1.3  proposed  -1.0
+  Qwen__Qwen3-14B__thinking                    same order rerun            identical  52.0%  verdicts changed   5  marin strict  +1.0  proposed  +1.0
+  Qwen__Qwen3-14B__thinking                    shuffled order              identical  48.0%  verdicts changed   4  marin strict  +0.0  proposed  -0.3
+  Qwen__Qwen3-32B                              same order rerun            identical  28.3%  verdicts changed  16  marin strict  -0.7  proposed  +0.3
+  Qwen__Qwen3-32B                              shuffled order              identical  24.7%  verdicts changed  13  marin strict  -1.7  proposed  -1.3
+  Qwen__Qwen3-32B                              batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  Qwen__Qwen3-32B                              default vs batch-invariant  identical  23.7%  verdicts changed  13  marin strict  +0.3  proposed  +0.7
+  Qwen__Qwen3-8B                               same order rerun            identical  49.0%  verdicts changed   4  marin strict  +0.0  proposed  +0.0
+  Qwen__Qwen3-8B                               shuffled order              identical  50.3%  verdicts changed   5  marin strict  +0.3  proposed  +0.3
+  Qwen__Qwen3-8B                               batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  Qwen__Qwen3-8B                               default vs batch-invariant  identical  27.0%  verdicts changed  11  marin strict  -1.0  proposed  -1.0
+  Qwen__Qwen3-8B__thinking                     same order rerun            identical  43.3%  verdicts changed  10  marin strict  +0.0  proposed  +0.7
+  Qwen__Qwen3-8B__thinking                     shuffled order              identical  46.0%  verdicts changed   9  marin strict  +0.3  proposed  +0.3
+  allenai__Llama-3.1-Tulu-3-8B                 same order rerun            identical  33.3%  verdicts changed   9  marin strict  +0.3  proposed  -0.3
+  allenai__Llama-3.1-Tulu-3-8B                 shuffled order              identical  35.3%  verdicts changed   7  marin strict  +1.0  proposed  +1.0
+  allenai__Llama-3.1-Tulu-3-8B                 batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  allenai__Llama-3.1-Tulu-3-8B                 default vs batch-invariant  identical  36.3%  verdicts changed   6  marin strict  +1.3  proposed  +0.7
+  allenai__OLMo-2-0325-32B-Instruct            same order rerun            identical  38.3%  verdicts changed   8  marin strict  +0.0  proposed  +1.0
+  allenai__OLMo-2-0325-32B-Instruct            shuffled order              identical  34.0%  verdicts changed   7  marin strict  -1.0  proposed  +0.0
+  allenai__OLMo-2-0325-32B-Instruct            batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  allenai__OLMo-2-0325-32B-Instruct            default vs batch-invariant  identical  28.7%  verdicts changed  10  marin strict  -1.3  proposed  -1.7
+  allenai__OLMo-2-1124-13B-Instruct            same order rerun            identical  62.7%  verdicts changed   8  marin strict  +0.0  proposed  +0.3
+  allenai__OLMo-2-1124-13B-Instruct            shuffled order              identical  62.7%  verdicts changed  10  marin strict  +0.0  proposed  +0.7
+  allenai__OLMo-2-1124-13B-Instruct            batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  allenai__OLMo-2-1124-13B-Instruct            default vs batch-invariant  identical  23.3%  verdicts changed  13  marin strict  +1.0  proposed  +1.3
+  allenai__OLMo-2-1124-7B-Instruct             same order rerun            identical  62.0%  verdicts changed   2  marin strict  +0.7  proposed  +0.3
+  allenai__OLMo-2-1124-7B-Instruct             shuffled order              identical  60.3%  verdicts changed   2  marin strict  +0.7  proposed  +0.3
+  allenai__OLMo-2-1124-7B-Instruct             batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  allenai__OLMo-2-1124-7B-Instruct             default vs batch-invariant  identical  26.3%  verdicts changed  11  marin strict  +1.0  proposed  +0.7
+  marin-community__marin-8b-instruct           same order rerun            identical  49.3%  verdicts changed   5  marin strict  -1.0  proposed  -0.7
+  marin-community__marin-8b-instruct           shuffled order              identical  45.3%  verdicts changed   5  marin strict  -0.3  proposed  +0.0
+  marin-community__marin-8b-instruct           batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  marin-community__marin-8b-instruct           default vs batch-invariant  identical  37.0%  verdicts changed   5  marin strict  +0.3  proposed  +1.0
+  microsoft__phi-4                             same order rerun            identical  66.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  microsoft__phi-4                             shuffled order              identical  59.7%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  microsoft__phi-4                             batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  microsoft__phi-4                             default vs batch-invariant  identical  60.7%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  mistralai__Mistral-7B-Instruct-v0.3          same order rerun            identical  52.3%  verdicts changed   3  marin strict  +0.3  proposed  -0.3
+  mistralai__Mistral-7B-Instruct-v0.3          shuffled order              identical  43.0%  verdicts changed   6  marin strict  +1.3  proposed  +1.3
+  mistralai__Mistral-7B-Instruct-v0.3          batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  mistralai__Mistral-7B-Instruct-v0.3          default vs batch-invariant  identical  24.3%  verdicts changed   9  marin strict  +0.3  proposed  +1.3
+  mistralai__Mistral-Small-24B-Instruct-2501   same order rerun            identical  59.7%  verdicts changed   3  marin strict  -0.3  proposed  +0.3
+  mistralai__Mistral-Small-24B-Instruct-2501   shuffled order              identical  32.0%  verdicts changed  10  marin strict  +0.0  proposed  +0.3
+  mistralai__Mistral-Small-24B-Instruct-2501   batch-invariant, shuffled   identical 100.0%  verdicts changed   0  marin strict  +0.0  proposed  +0.0
+  mistralai__Mistral-Small-24B-Instruct-2501   default vs batch-invariant  identical  33.0%  verdicts changed  10  marin strict  +1.3  proposed  +1.0
+
+## 4. Sampled runs (temperature 0.7): mean and range of prompt-level accuracy
+  Qwen__Qwen2.5-14B-Instruct                           marin strict  33.9 (30.7-37.0)  proposed  31.2 (29.0-34.3)
+  Qwen__Qwen2.5-32B-Instruct                           marin strict  34.3 (31.3-36.7)  proposed  31.8 (29.7-33.0)
+  Qwen__Qwen2.5-7B-Instruct                            marin strict  26.8 (24.7-29.3)  proposed  23.9 (22.3-26.0)
+  Qwen__Qwen3-14B                                      marin strict  27.7 (25.7-30.0)  proposed  27.7 (25.7-30.0)
+  Qwen__Qwen3-32B                                      marin strict  25.6 (23.3-29.7)  proposed  25.3 (22.0-28.3)
+  Qwen__Qwen3-8B                                       marin strict  25.5 (23.0-27.7)  proposed  23.5 (21.7-25.7)
+  allenai__Llama-3.1-Tulu-3-8B                         marin strict  22.8 (20.3-24.7)  proposed  22.8 (21.0-24.7)
+  allenai__OLMo-2-0325-32B-Instruct                    marin strict  32.7 (30.0-35.0)  proposed  31.1 (29.0-32.3)
+  allenai__OLMo-2-1124-13B-Instruct                    marin strict  22.3 (19.3-24.3)  proposed  20.3 (18.0-22.3)
+  allenai__OLMo-2-1124-7B-Instruct                     marin strict  20.4 (19.0-21.7)  proposed  19.1 (18.0-20.7)
+  marin-community__marin-8b-instruct                   marin strict  17.9 (16.0-19.7)  proposed  16.5 (14.3-19.3)
+  microsoft__phi-4                                     marin strict  18.7 (15.3-22.3)  proposed  19.2 (16.3-23.0)
+  mistralai__Mistral-7B-Instruct-v0.3                  marin strict  17.6 (15.3-19.7)  proposed  15.3 (13.7-17.0)
+  mistralai__Mistral-Small-24B-Instruct-2501           marin strict  21.0 (19.3-23.3)  proposed  21.8 (20.7-23.7)
+
+## 4b. Rankings by mean sampled accuracy (less run noise than one greedy run)
+  tau(marin_strict, proposed) = +0.934
+   1. Qwen__Qwen2.5-32B-Instruct                    34.3   |  Qwen__Qwen2.5-32B-Instruct                    31.8
+   2. Qwen__Qwen2.5-14B-Instruct                    33.9   |  Qwen__Qwen2.5-14B-Instruct                    31.2
+   3. allenai__OLMo-2-0325-32B-Instruct             32.7   |  allenai__OLMo-2-0325-32B-Instruct             31.1
+   4. Qwen__Qwen3-14B                               27.7   |  Qwen__Qwen3-14B                               27.7
+   5. Qwen__Qwen2.5-7B-Instruct                     26.8   |  Qwen__Qwen3-32B                               25.3
+   6. Qwen__Qwen3-32B                               25.6   |  Qwen__Qwen2.5-7B-Instruct                     23.9
+   7. Qwen__Qwen3-8B                                25.5   |  Qwen__Qwen3-8B                                23.5
+   8. allenai__Llama-3.1-Tulu-3-8B                  22.8   |  allenai__Llama-3.1-Tulu-3-8B                  22.8
+   9. allenai__OLMo-2-1124-13B-Instruct             22.3   |  mistralai__Mistral-Small-24B-Instruct-2501    21.8
+  10. mistralai__Mistral-Small-24B-Instruct-2501    21.0   |  allenai__OLMo-2-1124-13B-Instruct             20.3
+  11. allenai__OLMo-2-1124-7B-Instruct              20.4   |  microsoft__phi-4                              19.2
+  12. microsoft__phi-4                              18.7   |  allenai__OLMo-2-1124-7B-Instruct              19.1
+  13. marin-community__marin-8b-instruct            17.9   |  marin-community__marin-8b-instruct            16.5
+  14. mistralai__Mistral-7B-Instruct-v0.3           17.6   |  mistralai__Mistral-7B-Instruct-v0.3           15.3
+
+## 5. Thinking runs: visible answer vs raw text with reasoning (greedy)
+  Qwen__Qwen3-14B__thinking                            marin_strict   answer  34.0  raw  20.0
+  Qwen__Qwen3-14B__thinking                            marin_loose    answer  39.3  raw  22.7
+  Qwen__Qwen3-14B__thinking                            proposed       answer  37.7  raw  20.0
+  Qwen__Qwen3-8B__thinking                             marin_strict   answer  32.3  raw  19.3
+  Qwen__Qwen3-8B__thinking                             marin_loose    answer  35.3  raw  22.0
+  Qwen__Qwen3-8B__thinking                             proposed       answer  33.0  raw  18.0
+
+## 6. Constraint verdicts where Marin strict and the validated checkers disagree (all runs)
+  instruction                             n    M>P    P>M    M>F    F>M
+  format:sub-bullets                   2736    208    912    208    912
+  format:list                          2052    463      0      9      0
+  format:quotes                        1824    327     43    327     28
+  format:quote_unquote                 1140    337      0      9      0
+  words:palindrome                     1596    320      0      0      0
+  format:parentheses                   1824    201      0      0      0
+  ratio:overlap                        2736    162     39    162     39
+  count:conjunctions                   1596    188      0    188      0
+  format:emoji                         2052      0    173      0    173
+  format:no_bullets_bullets            1140     31    128     31    128
+  count:word_count_range               2508     58     80      0      0
+  sentence:alliteration_increment      1140    127     10    114     11
+  format:line_indent                   2052    126      1      0      1
+  format:thesis                        2052    101      2     82      2
+  format:options                       1368      0     78      0     78
+  words:last_first                     1140     25     37      0     38
+  sentence:increment                   1824     57      0      0      1
+  format:output_template                912     36      0     36      0
+  words:paragraph_last_first           1368      1     29      0     29
+  custom:mcq_count_length               228      0     29      0     29
+  sentence:keyword                     3420     10     16     10     16
+  custom:sentence_alphabet              228      0     26      0     26
+  ratio:stop_words                     2736     15      9      0      0
+  ratio:sentence_type                  1368     15      5     15      5
+  format:title_case                     912      0     18      0     18
+  count:unique_word_count              2052      8      0      8      0
+  format:newline                       1368      3      5      3      5
+  ratio:sentence_balance               1596      8      0      8      0
+  custom:reverse_newline                228      6      0      6      0
+  count:numbers                        1824      4      1      0      0
+  custom:character_reverse              228      5      0      5      0
+  words:words_position                  684      0      4      0      5
+  custom:word_reverse                   228      4      0      4      0
+  words:start_verb                     1368      0      3      0      3
+  count:words_japanese                 1140      1      1      0      0
+  count:keywords_multiple              1140      1      0      1      0
+  ratio:sentence_words                 1596      1      0      1      0
+  words:odd_even_syllables             2052      1      0      0      0
+  words:prime_lengths                  1140      0      1      0      1
+  custom:csv_special_character          228      0      1      0      0
+
+## 7. Diagnostics, greedy run: length, truncation, repetition, unclosed reasoning;
+##    and how many constraint passes come from a truncated or degenerate response
+  config                                                tokens  trunc  degen unclosed  passes M of which bad  passes P of which bad
+  Qwen__Qwen2.5-14B-Instruct                               285   4.3%   2.7%     0.0%       129            5       115            4
+  Qwen__Qwen2.5-32B-Instruct                               289   4.0%   3.0%     0.0%       143            9       132            8
+  Qwen__Qwen2.5-7B-Instruct                                287   6.7%   4.0%     0.0%       111            9        99            7
+  Qwen__Qwen3-14B                                          373  10.3%   3.0%     0.0%       109            6       107            5
+  Qwen__Qwen3-14B__thinking                               1654   5.3%   5.0%     3.0%       127            6       137            4
+  Qwen__Qwen3-32B                                          411  10.3%   1.7%     0.0%        96            8        93            7
+  Qwen__Qwen3-8B                                           428  15.0%   5.7%     0.0%        97            8        89            4
+  Qwen__Qwen3-8B__thinking                                2714  16.3%  15.7%    11.7%       123           20       125           17
+  allenai__Llama-3.1-Tulu-3-8B                             421   5.3%   0.0%     0.0%        83            6        82            6
+  allenai__OLMo-2-0325-32B-Instruct                        266   2.0%   0.0%     0.0%       133            1       126            1
+  allenai__OLMo-2-1124-13B-Instruct                        369   1.7%   0.0%     0.0%        85            2        72            2
+  allenai__OLMo-2-1124-7B-Instruct                         390   4.0%   0.0%     0.0%        77            2        70            2
+  marin-community__marin-8b-instruct                       382  11.3%   5.7%     0.0%        66            7        62            8
+  microsoft__phi-4                                         420   4.3%   0.3%     0.0%        76            1        77            0
+  mistralai__Mistral-7B-Instruct-v0.3                      396   5.0%   0.7%     0.0%        67            4        59            5
+  mistralai__Mistral-Small-24B-Instruct-2501               377   9.0%   3.0%     0.0%        86            6        86            6
+
+## 8. Loose rescues (all runs): constraints that fail Marin strict but pass Marin loose, and
+##    how many of those the validated checker (proposed) also passes
+  3666 rescues, 1014 of them also pass the validated checker
+  format:sub-bullets                   1737 rescued     912 validated pass
+  format:line_indent                    233 rescued       1 validated pass
+  ratio:stop_words                      164 rescued       5 validated pass
+  count:word_count_range                156 rescued       6 validated pass
+  count:numbers                         138 rescued       0 validated pass
+  custom:multiples                      122 rescued       0 validated pass
+  sentence:alliteration_increment       106 rescued       4 validated pass
+  format:emoji                          104 rescued      10 validated pass
+  format:newline                         94 rescued       0 validated pass
+  sentence:keyword                       84 rescued       0 validated pass
+  words:start_verb                       79 rescued       1 validated pass
+  ratio:sentence_balance                 78 rescued       0 validated pass
+  sentence:increment                     74 rescued       0 validated pass
+  ratio:sentence_type                    69 rescued       0 validated pass
+  format:no_bullets_bullets              59 rescued      42 validated pass
+  words:paragraph_last_first             50 rescued       7 validated pass
+  format:options                         43 rescued       0 validated pass
+  words:no_consecutive                   40 rescued       0 validated pass
+  ratio:overlap                          38 rescued       2 validated pass
+  words:vowel                            27 rescued       0 validated pass
+  format:quote_unquote                   25 rescued       0 validated pass
+  count:words_japanese                   22 rescued       1 validated pass
+  custom:sentence_alphabet               22 rescued      19 validated pass
+  words:alphabet                         17 rescued       0 validated pass
+  words:repeats                          16 rescued       0 validated pass
+  custom:csv_special_character           13 rescued       1 validated pass
+  words:last_first                       12 rescued       2 validated pass
+  repeat:repeat_change                   10 rescued       0 validated pass
+  format:quotes                          10 rescued       0 validated pass
+  custom:mcq_count_length                 9 rescued       0 validated pass
+  format:title_case                       6 rescued       1 validated pass
+  words:consonants                        4 rescued       0 validated pass
+  words:odd_even_syllables                3 rescued       0 validated pass
+  words:words_position                    1 rescued       0 validated pass
+  count:keywords_multiple                 1 rescued       0 validated pass

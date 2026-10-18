@@ -1,0 +1,11 @@
+15 constraints fail strict but pass loose (Marin's checkers)
+  format:sub-bullets             no *                     6  rescuing text violates the validated contract: 6
+  count:numbers                  drop first line          1  rescuing text violates the validated contract: 0
+  count:numbers                  drop last line           1  rescuing text violates the validated contract: 0
+  count:word_count_range         drop first+last          1  rescuing text violates the validated contract: 0
+  format:emoji                   drop first line          1  rescuing text violates the validated contract: 0
+  format:line_indent             drop first+last          1  rescuing text violates the validated contract: 1
+  format:no_bullets_bullets      drop first+last          1  rescuing text violates the validated contract: 0
+  format:quote_unquote           drop last line           1  rescuing text violates the validated contract: 1
+  ratio:stop_words               drop first line          1  rescuing text violates the validated contract: 1
+  words:repeats                  drop last line           1  rescuing text violates the validated contract: 0

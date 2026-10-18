@@ -1,0 +1,20 @@
+## D-sentences: remove HTML tags before segmenting
+  upstream sample: 0 of 344 constraint verdicts change
+  panel greedy: 0 of 5504 constraint verdicts change
+## D-sentences: a line break ends a sentence
+  upstream sample: 1 of 344 constraint verdicts change
+    custom:sentence_alphabet           fail->pass 1
+    keys: ['282']
+  panel greedy: 16 of 5504 constraint verdicts change
+    sentence:keyword                   pass->fail 8
+    sentence:keyword                   fail->pass 4
+    ratio:sentence_balance             fail->pass 1
+    ratio:sentence_type                fail->pass 1
+    format:emoji                       pass->fail 1
+    sentence:alliteration_increment    fail->pass 1
+## D-sub-bullet-nesting: sub-bullets must be indented
+  upstream sample: 1 of 344 constraint verdicts change
+    format:sub-bullets                 pass->fail 1
+    keys: ['129']
+  panel greedy: 34 of 5504 constraint verdicts change
+    format:sub-bullets                 pass->fail 34

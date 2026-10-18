@@ -1,0 +1,20 @@
+# bash scripts/clean_install_check.sh <work dir> gen_final.tgz 3, run 2026-10-18T03:25Z
+438 passed, 2 xfailed in 7.27s
+same      results/fixtures_matrix.txt
+same      results/upstream_tests_on_validated.txt
+same      results/upstream_sample_output.summary.txt
+same      results/loose_rescues.txt
+same      results/coverage.txt
+same      results/description_consistency.txt
+same      results/properties_on_official.txt
+same      results/start_verb_eval.txt
+same      results/fuzz_csv.txt
+same      results/fuzz_crashes.txt
+same      protocol/taxonomy.md
+same      fixtures/ifbench_fixtures.jsonl
+same      blind audit round 1
+same      blind audit round 2
+same      results/panel/analysis.txt
+same      results/panel/report_tables.md
+same      results/panel/disagreements.md
+same      results/compare_runs_example.txt

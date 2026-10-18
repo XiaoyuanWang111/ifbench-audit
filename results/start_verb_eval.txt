@@ -1,0 +1,3 @@
+imperative openings tagged VB*: 175/213 (82%)
+non-verb openings tagged VB*: 0/39 []
+verbs missed in at least one context (24): ['Accept', 'Analyze', 'Close', 'Describe', 'Design', 'Discover', 'Embrace', 'Explore', 'Find', 'Focus', 'Follow', 'Imagine', 'Invest', 'List', 'Mix', 'Note', 'Picture', 'Plan', 'Practice', 'Share', 'Show', 'Support', 'Travel', 'Wait']

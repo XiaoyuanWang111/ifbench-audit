@@ -1,0 +1,11 @@
+upstream InstructionsTest: 65 test methods; 5 failing assertions or subtests
+  test_europe_capitals (upstream_instructions_test.InstructionsTest) [test with TEST_EUROPE]
+      AssertionError: False is not true
+  test_nested_parentheses (upstream_instructions_test.InstructionsTest) [test with TEST_NESTED_PARENTHESES_TRUE2]
+      AssertionError: False is not true
+  test_palindrome (upstream_instructions_test.InstructionsTest) [test with TEST_PALINDROME2]
+      AssertionError: False is not true
+  test_quote_explanation__handles_empty_string_after_stripping (upstream_instructions_test.InstructionsTest)
+      AssertionError: False is not true : expected True for digits and punctuation only
+  test_reverse_newline (upstream_instructions_test.InstructionsTest) [test with TEST_NEWLINE_COUNTRIES]
+      AssertionError: False is not true

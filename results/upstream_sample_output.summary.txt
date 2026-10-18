@@ -1,0 +1,18 @@
+300 prompts, 344 constraints
+  marin_strict     prompt  27.7%   instruction  29.7%
+  marin_loose      prompt  31.0%   instruction  34.0%
+  upstream_strict  prompt  28.0%   instruction  29.7%
+  upstream_loose   prompt  31.3%   instruction  34.0%
+  fixes_only       prompt  29.3%   instruction  31.7%
+  proposed         prompt  27.0%   instruction  29.4%
+  checker exceptions: 0 []
+instruction ids where Marin strict and validated disagree (marin pass -> proposed fail, proposed pass -> marin fail | same for fixes-only):
+  format:sub-bullets                   0   6 |   0   6
+  words:last_first                     4   0 |   0   0
+  ratio:overlap                        1   2 |   1   2
+  format:list                          2   0 |   0   0
+  format:quotes                        2   0 |   2   0
+  format:emoji                         0   1 |   0   1
+  format:line_indent                   1   0 |   0   0
+  ratio:sentence_type                  0   1 |   0   1
+  words:palindrome                     1   0 |   0   0
