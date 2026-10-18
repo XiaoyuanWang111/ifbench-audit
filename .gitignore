@@ -1,0 +1,17 @@
+__pycache__/
+*.egg-info/
+.venv/
+.hypothesis/
+# Inputs fetched by scripts/fetch_data.py and scripts/fetch_nltk_data.py.
+data/
+nltk_data/
+# The vendored checkers create this directory next to themselves at import time.
+.nltk_data/
+# Evalchemy publishes no license, so its grader is not redistributed (see vendor/README.md).
+vendor/marin/ifbench_marin/grader.py
+# The panel generations are published as a release archive; the analyses rebuild the
+# per-constraint grades.
+results/*.tgz
+results/panel/gen/
+results/panel/*.log
+results/**/*.constraints.jsonl
